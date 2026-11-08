@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Tricia De Rose — Business Analytics, Finance and Accounting portfolio" name="description"/>
+<title>Tricia De Rose | Business Analytics · Finance · Accounting</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+
+:root{--ink:#192a42;--muted:#52627b;--teal:#087f97;--line:#dce4ec;--shadow:0 6px 24px #18263c12}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:74px}body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);font-size:16px;line-height:1.55;background:#f6f8fb}
+
+button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #d99b35;outline-offset:2px}
+
+[hidden]{display:none!important}.wrap{max-width:1420px;margin:auto;padding:0 28px}.section{padding:36px 0 42px;border-top:5px solid var(--accent)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:20px}.eyebrow{font-size:14px;font-weight:800;letter-spacing:.11em;color:var(--accent);text-transform:uppercase}h1,h2,h3,h4,p{margin-top:0}h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(35px,4.3vw,64px);line-height:1.12;letter-spacing:-.035em;margin-bottom:16px}h2{font-size:clamp(28px,3vw,43px);line-height:1.14;letter-spacing:-.035em;margin:4px 0 7px}h3{font-size:21px;line-height:1.25;margin-bottom:8px}p{margin-bottom:12px}.lead{color:var(--muted);max-width:850px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}.btn,.tab,.chip{border:1px solid #b9cbd8;border-radius:9px;padding:10px 15px;background:white;color:#173450;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}.btn.primary,.tab[aria-selected=true],.chip.active{background:#173b58;color:#fff;border-color:#173b58}.btn:hover,.tab:hover,.chip:hover{filter:brightness(.95)}.controls{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0}.muted{color:var(--muted)}.small{font-size:14px}.pill{font-size:13px;padding:5px 9px;border-radius:6px;background:#eef4f8;color:#27536e;display:inline-block;margin:3px}.grid{display:grid;gap:15px}.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols4{grid-template-columns:repeat(4,minmax(0,1fr))}.image{width:100%;object-fit:cover;border-radius:12px}.metric{text-align:left}.metric strong{display:block;font-size:clamp(22px,2.2vw,32px);line-height:1.2;color:#153b59}.metric span{font-size:14px;color:var(--muted)}.notice{border-left:4px solid var(--accent);padding:10px 13px;background:#fff;border-radius:8px}
+
+nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #d9e2ea;box-shadow:0 2px 14px #0000000b}.navrow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}.brand{font-weight:800;text-decoration:none;white-space:nowrap}.brand span{color:#0789a1}.links{display:flex;align-items:center;gap:13px;flex-wrap:wrap}.links a{text-decoration:none;font-size:13px;font-weight:800}.links a:hover{color:#0789a1}.mobile-toggle{display:none}
+
+#home{--accent:#2bbdd1;background:linear-gradient(135deg,#101e35,#1d3653);color:#fff;border:0;padding:40px 0}.hero{display:grid;grid-template-columns:minmax(210px,.75fr) minmax(0,1.85fr) minmax(210px,.68fr);align-items:center;gap:24px}.hero-photo{width:100%;max-height:440px;object-fit:cover;object-position:top;border-radius:18px;border:2px solid #ffffff55}.hero .eyebrow{color:#ffcf7e}.hero h1 em{font-style:normal;color:#61d8e9}.hero p{color:#e5edf5;font-size:16px}.hero strong{color:white}.hero .btn.primary{background:#08a3bc;border-color:#08a3bc}.hero .btn{color:#173b58}.hero-guide{align-self:center;border:1px solid #59c5db;background:#203d5b;border-radius:16px;padding:18px;text-align:center;box-shadow:0 8px 26px #0002}.hero-guide img{width:min(100%,160px);height:160px;object-fit:cover;object-position:top;border-radius:14px;margin:0 auto 12px;display:block}.hero-guide h3{font-size:20px;margin:0 0 8px;color:#fff}.hero-guide p{font-size:14px;line-height:1.45;color:#dbeaf3;margin-bottom:12px}.hero-guide .btn{background:#ffd68a;border-color:#ffd68a;color:#173450;width:100%}.hero-guide .guide-hint{font-size:12px;color:#c3d9e8;margin-top:10px}
+
+#story{--accent:#178bb0;background:#eaf5fb}.story-layout{display:grid;grid-template-columns:240px minmax(0,1.5fr) minmax(310px,1fr);gap:15px;align-items:start}.story-portrait{width:100%;max-height:330px;object-fit:cover;object-position:top}.story-copy p{margin-bottom:11px}.interest-details{min-height:150px}
+
+#experience{--accent:#9c6b31;background:#fff7ed}.experience-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.exp-tile{text-align:left;min-height:125px;border:2px solid transparent;border-radius:14px;padding:16px;background:var(--tile);color:#1b344d}.exp-tile.active{border-color:var(--accent);box-shadow:0 0 0 2px #fff}.exp-tile b{display:block;font-size:17px}.exp-tile small{display:block;margin-top:7px;font-size:13px}.detail-panel{margin-top:12px}.detail-columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}.detail-columns h4{color:#775027;font-size:17px}
+
+#lab{--accent:#8058a8;background:#f1ebf8}.lab-switch{display:flex;flex-wrap:wrap;gap:8px}.kpis{margin:13px 0}.lab-content{display:grid;grid-template-columns:1fr 1.3fr;gap:14px}.module-buttons{display:flex;flex-wrap:wrap;gap:6px}.module-buttons button{flex:1 1 120px}.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.calc-grid input{width:100%;border:1px solid #b8c6d4;border-radius:8px;padding:10px}.result{background:#eef6f9;padding:13px;border-radius:10px;font-size:27px;font-weight:800;color:#11657d}.stage-buttons{display:flex;gap:6px;flex-wrap:wrap}.stage-buttons .chip{flex:1 1 140px}.stage-buttons .active{background:#77529e;color:white}
+
+#projects{--accent:#079c9d;background:#f1faf8}.project-card{display:flex;flex-direction:column;gap:8px;border-top:4px solid var(--project-color,#16a0a5)}.project-card p{font-size:15px;color:#516277}.project-card .btn{margin-top:auto}.project-card[hidden]{display:none!important}
+
+#consulting{--accent:#2d739a;background:#eaf2f8}.consulting-layout{display:grid;grid-template-columns:1fr 1.5fr;gap:15px}.consulting-image{height:260px}.consulting-panel{min-height:185px}
+
+#skills{--accent:#24805c;background:#eef7f0}.skills-list{display:flex;flex-wrap:wrap;gap:8px}
+
+#beyond{--accent:#3278bd;background:#eaf4ff}.beyond-layout{display:grid;grid-template-columns:.9fr 1.4fr;gap:15px}.swim-photo{height:290px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}.gallery img{width:100%;height:145px;object-fit:cover;border-radius:10px}.gallery figcaption{font-size:13px;color:#48647b}
+
+#connect{--accent:#e0b55f;background:#12233d;color:white;padding:40px 0 60px}.contact-links{display:flex;flex-wrap:wrap;gap:12px}.contact-links a{color:#c8f2ff}.contact-links .btn{color:#15364d}
+
+.help-launcher{position:fixed;bottom:18px;right:18px;z-index:80;display:flex;align-items:center;gap:9px;border:2px solid #ffe0a1;border-radius:40px;padding:7px 16px 7px 7px;background:#ffdf99;color:#173450;font-weight:800;box-shadow:0 7px 28px #0003}.help-launcher img{width:40px;height:40px;border-radius:50%;object-fit:cover}.help-panel{position:fixed;bottom:85px;right:18px;z-index:90;width:min(410px,calc(100vw - 24px));max-height:78vh;overflow:auto;background:white;color:#192a42;border:1px solid #c6d9e5;border-radius:18px;box-shadow:0 14px 48px #0004}.help-head{display:flex;align-items:center;gap:10px;background:#173b58;color:white;padding:12px}.help-head img{width:50px;height:50px;object-fit:cover;border-radius:50%}.help-body{padding:15px}.help-body p{font-size:15px}.help-body select{max-width:100%;padding:8px;border:1px solid #aebecb;border-radius:8px}.help-body .controls .btn{font-size:14px;padding:8px 10px}.help-status{font-size:13px;color:#586a7b}.section-help{font-size:14px}.footer-note{font-size:13px;color:#c1d0df;margin-top:24px}
+
+@media(max-width:1200px){.hero{grid-template-columns:minmax(180px,.7fr) minmax(0,1.5fr)}.hero-guide{grid-column:1/-1;display:grid;grid-template-columns:100px 1fr auto;gap:15px;align-items:center;text-align:left}.hero-guide img{width:100px;height:100px;margin:0}.hero-guide .btn{width:auto}.hero-guide .guide-hint{display:none}}@media(max-width:1050px){.story-layout{grid-template-columns:210px 1fr}.story-layout>.interest-card{grid-column:1/-1}.experience-grid{grid-template-columns:repeat(2,1fr)}.cols4{grid-template-columns:repeat(2,1fr)}.cols3{grid-template-columns:repeat(2,1fr)}}
+
+@media(max-width:760px){.wrap{padding:0 16px}.section{padding:26px 0}.mobile-toggle{display:block}.links{display:none;position:absolute;top:64px;left:0;right:0;padding:15px;background:white;box-shadow:var(--shadow)}.links.open{display:flex}.hero,.story-layout,.lab-content,.consulting-layout,.beyond-layout{grid-template-columns:1fr}.hero-photo{max-height:300px;object-fit:contain}.hero-guide{display:block;text-align:center}.hero-guide img{width:130px;height:130px;margin:0 auto 10px}.hero-guide .btn{width:100%}.story-portrait{max-height:300px;object-fit:contain}.detail-columns{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start}}
+
+@media(max-width:470px){.experience-grid,.cols2,.cols3,.cols4{grid-template-columns:1fr}.calc-grid{grid-template-columns:1fr}.help-launcher{right:10px;bottom:10px}.help-panel{right:10px;bottom:73px}.gallery{grid-template-columns:1fr 1fr}}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+
+/* Consistent, compact typography */
+body{font-size:14px}
+h1{font-size:clamp(30px,3.8vw,56px)}
+h2{font-size:clamp(25px,2.7vw,38px)}
+h3{font-size:19px}
+.hero p{font-size:14px}
+.eyebrow{font-size:13px}
+.exp-tile b{font-size:16px}
+.detail-columns h4{font-size:16px}
+.metric strong{font-size:clamp(21px,2vw,29px)}
+.project-card p,.help-body p{font-size:14px}
+#story .story-copy p{font-size:13px;line-height:1.55;margin-bottom:10px}
+/* Section 02: colourful, interactive interests panel */
+#story .story-layout{grid-template-columns:240px minmax(0,1.5fr) minmax(340px,1fr)}
+#story .interest-card{padding:12px;min-width:0;overflow:hidden}
+#story .interest-card h3{font-size:19px;margin:0 0 5px;color:#102e4d}
+#story .interests-subtitle{display:inline-block;background:#fff0c8;color:#a15383;border-radius:20px;padding:4px 9px;font-size:11px;margin:0 0 9px;font-weight:700}
+#story .interest-menu{display:grid;gap:5px;margin-bottom:8px}
+#story .interest-option{display:flex;align-items:center;justify-content:space-between;width:100%;padding:8px 11px;border-radius:10px;border:2px solid transparent;text-align:left;color:#143452;font-size:14px;font-weight:800;transition:transform .18s,border-color .18s,box-shadow .18s}
+#story .interest-option:hover{transform:translateX(2px)}
+#story .interest-option[data-interest=analytics]{background:#e0f6ff}
+#story .interest-option[data-interest=finance]{background:#fff4e5}
+#story .interest-option[data-interest=economics]{background:#eee8ff}
+#story .interest-option.active[data-interest=analytics]{border-color:#00bce8;box-shadow:0 0 0 2px #b9f2ff}
+#story .interest-option.active[data-interest=finance]{border-color:#e8a640;box-shadow:0 0 0 2px #ffe7bb}
+#story .interest-option.active[data-interest=economics]{border-color:#9b79dc;box-shadow:0 0 0 2px #e3d6ff}
+#story .interest-details{border-radius:12px;padding:12px;min-height:0;overflow:hidden;position:relative}
+#story .interest-details.analytics-theme{background:linear-gradient(135deg,#e2f6ff,#d3efff)}
+#story .interest-details.finance-theme{background:linear-gradient(135deg,#fff4dc,#ffe8c3)}
+#story .interest-details.economics-theme{background:linear-gradient(135deg,#f0eaff,#e5dcff)}
+#story .interest-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
+#story .interest-heading h4{font-size:18px;margin:0;color:#008eaf}
+#story .finance-theme .interest-heading h4{color:#a16b18}
+#story .economics-theme .interest-heading h4{color:#7050ae}
+#story .interest-heading span{font-size:23px}
+#story .interest-body{font-size:11px;line-height:1.45;color:#174060}
+#story .interest-body>strong{display:block;margin-bottom:5px}
+#story .interest-body p{font-size:11px;line-height:1.45;margin:0 0 5px}
+#story .interest-body b{color:#103c60}
+#story .interest-body a{display:inline-block;margin-top:7px;font-weight:800;color:#6740aa}
+@media(max-width:1150px){#story .story-layout{grid-template-columns:210px minmax(0,1fr)}#story .story-layout>.interest-card{grid-column:1/-1}}
+@media(max-width:760px){#story .story-layout{grid-template-columns:1fr}#story .story-layout>.interest-card{grid-column:auto}#story .interest-body,#story .interest-body p{font-size:12px}}
+
+/* SECTION 02 - ANIME GUIDE */
+
+#story .section-head {
+  align-items: center;
+}
+
+.story-guide-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 13px;
+  background: #fff3cb;
+  border: 1px solid #efc36b;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(27, 54, 81, 0.08);
+  max-width: 460px;
+}
+
+.story-guide-avatar {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.story-guide-message {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.story-guide-message strong {
+  color: #ae438e;
+  font-size: 14px;
+}
+
+.story-guide-message span {
+  color: #24425d;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.story-guide-play {
+  background: #0b8fb4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 13px;
+  font-size: 12px !important;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.story-guide-play:hover {
+  background: #08728f;
+}
+
+@media (max-width: 760px) {
+  .story-guide-mini {
+    width: 100%;
+    max-width: none;
+    flex-wrap: wrap;
+  }
+
+  .story-guide-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* SECTION 02 - COMPACT, BALANCED LAYOUT */
+
+#story {
+    padding-top: 20px !important;
+    padding-bottom: 22px !important;
+}
+
+/* Reduce space between heading and content */
+#story .section-head {
+    margin-bottom: 10px !important;
+    align-items: center;
+}
+
+/* Three columns fill the available width */
+#story .story-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(180px, 0.65fr)
+        minmax(0, 1.75fr)
+        minmax(330px, 1.25fr);
+    gap: 10px !important;
+    align-items: stretch;
+}
+
+/* Keep cards aligned and equally tall */
+#story .story-layout > .card,
+#story .story-layout > .interests-card {
+    height: 100%;
+    min-width: 0;
+    padding: 13px !important;
+}
+
+/* Graduation photo */
+#story .story-portrait {
+    width: 100%;
+    height: 260px;
+    max-height: none;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Remove unnecessary gaps around headings */
+#story .story-copy h3 {
+    margin-bottom: 7px !important;
+}
+
+#story .story-copy p {
+    margin-bottom: 8px !important;
+}
+
+/* Interests card */
+#story .interest-card,
+#story .interests-card {
+    padding: 12px !important;
+}
+
+/* Make interests rows more compact */
+#story .interest-menu {
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+#story .interest-option {
+    padding: 7px 11px;
+}
+
+/* Remove forced blank space in details */
+#story .interest-details {
+    min-height: 0 !important;
+    padding: 10px !important;
+}
+
+/* Prevent unwanted blank space after content */
+#story .interest-body p:last-child,
+#story .story-copy p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    #story .story-layout {
+        grid-template-columns: 210px minmax(0, 1fr);
+    }
+
+    #story .interest-card,
+    #story .interests-card {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    #story .story-layout {
+        grid-template-columns: 1fr;
+    }
+
+    #story .interest-card,
+    #story .interests-card {
+        grid-column: auto;
+    }
+
+    #story .story-portrait {
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+
+/* SECTION 02 - STORY CARD FORMATTING */
+
+#story .story-copy {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px !important;
+  border-radius: 16px;
+}
+
+/* Heading with a subtle accent line */
+#story .story-copy-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#story .story-heading-line {
+  width: 4px;
+  height: 25px;
+  background: #079cb5;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+#story .story-copy-heading h3 {
+  color: #153b59;
+  font-size: 19px !important;
+  margin: 0 !important;
+}
+
+/* Distribute paragraphs neatly within the card */
+#story .story-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+#story .story-paragraphs p {
+  font-size: inherit;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+/* Highlight the final message */
+#story .story-final-thought {
+  background: #eaf7fb;
+  border-left: 3px solid #0a9cb8;
+  border-radius: 0 9px 9px 0;
+  padding: 12px 14px;
+  color: #173b58;
+  font-weight: 600;
+}
+
+/* On smaller screens, keep natural paragraph spacing */
+@media (max-width: 760px) {
+  #story .story-paragraphs {
+    justify-content: flex-start;
+  }
+
+  #story .story-copy {
+    padding: 15px !important;
+  }
+}
+
+/* ======================================
+   SECTION 03 - EXPERIENCE REFINEMENTS
+   NO FONT SIZE REDUCTIONS
+====================================== */
+
+#experience {
+  padding-top: 20px !important;
+  padding-bottom: 24px !important;
+}
+
+/* Heading and guide */
+
+#experience .section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px !important;
+}
+
+#experience .section-head h2 {
+  margin-bottom: 5px;
+}
+
+#experience .section-head .lead {
+  margin-bottom: 0;
+}
+
+/* Anime guide */
+
+.experience-guide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff1cf;
+  border: 1px solid #e9bd69;
+  border-radius: 14px;
+  padding: 9px 12px;
+  box-shadow: 0 5px 18px rgba(40, 50, 70, 0.08);
+  width: min(100%, 480px);
+  flex-shrink: 0;
+}
+
+.experience-guide-image {
+  width: 76px;
+  height: 76px;
+  border-radius: 11px;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
+.experience-guide-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.experience-guide-text strong {
+  color: #a54387;
+  font-weight: 800;
+}
+
+.experience-guide-text span {
+  color: #29445d;
+  line-height: 1.4;
+}
+
+.experience-guide-play {
+  border: none;
+  border-radius: 8px;
+  background: #138eb0;
+  color: white;
+  padding: 9px 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.experience-guide-play:hover {
+  background: #0c7290;
+}
+
+/* Experience cards */
+
+#experience .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px !important;
+}
+
+#experience .exp-tile {
+  min-height: 110px !important;
+  padding: 14px 16px !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#experience .exp-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(20, 45, 70, 0.1);
+}
+
+/* Expanded experience panel */
+
+#experience .detail-panel {
+  margin-top: 10px !important;
+  padding: 17px 20px !important;
+}
+
+#experience .detail-panel .section-head {
+  margin-bottom: 10px !important;
+}
+
+#experience .detail-panel .section-head p {
+  margin-bottom: 0 !important;
+}
+
+#experience .detail-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+#experience .detail-columns h4 {
+  margin-bottom: 9px !important;
+}
+
+#experience .detail-columns p {
+  margin-bottom: 0 !important;
+  line-height: 1.55 !important;
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+  #experience .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #experience .section-head {
+    flex-wrap: wrap;
+  }
+
+  .experience-guide {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+  #experience .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #experience .detail-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .experience-guide {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .experience-guide-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* SECTION 03 - FIX GUIDE POSITION */
+
+/* Keep heading on left and guide on right */
+#experience > .wrap > .section-head {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 480px;
+    align-items: center !important;
+    gap: 24px !important;
+    margin-bottom: 14px !important;
+}
+
+/* Keep the heading and subtitle together */
+#experience > .wrap > .section-head > div:first-child {
+    min-width: 0;
+}
+
+/* Position anime guide on the right */
+#experience .experience-guide {
+    width: 100% !important;
+    max-width: 480px !important;
+    margin: 0 !important;
+    justify-self: end;
+    display: flex !important;
+    align-items: center;
+}
+
+/* Prevent guide contents from wrapping */
+#experience .experience-guide-text {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Keep experience cards close to the heading */
+#experience .experience-grid {
+    margin-top: 0 !important;
+}
+
+/* Tablet: stack only when there isn't enough room */
+@media (max-width: 1050px) {
+    #experience > .wrap > .section-head {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    #experience .experience-guide {
+        justify-self: start;
+    }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    #experience .experience-guide {
+        max-width: 100% !important;
+    }
+}
+
+
+/* SECTION 03 - CORRECT LAYOUT */
+
+#experience > .wrap > .section-head {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 480px;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 14px !important;
+}
+
+#experience .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+#experience #experienceDetail {
+  display: block;
+  width: 100%;
+  margin-top: 12px !important;
+  clear: both;
+}
+
+#experience #experienceDetail[hidden] {
+  display: none !important;
+}
+
+#experience .detail-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1050px) {
+  #experience > .wrap > .section-head {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  #experience .experience-grid,
+  #experience .detail-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* SECTION 04 - ANIME GUIDE */
+
+#lab > .wrap > .section-head {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 480px;
+  align-items: center !important;
+  gap: 20px !important;
+  margin-bottom: 14px !important;
+}
+
+#lab .lab-guide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+  padding: 9px 12px;
+  background: #fff1cf;
+  border: 1px solid #e9bd69;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(40, 50, 70, 0.08);
+  justify-self: end;
+}
+
+#lab .lab-guide-image {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+
+#lab .lab-guide-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+#lab .lab-guide-text strong {
+  color: #a54387;
+  font-weight: 800;
+}
+
+#lab .lab-guide-text span {
+  color: #29445d;
+  line-height: 1.4;
+}
+
+#lab .lab-guide-play {
+  border: none;
+  border-radius: 8px;
+  background: #138eb0;
+  color: white;
+  padding: 9px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#lab .lab-guide-play:hover {
+  background: #0c7290;
+}
+
+@media (max-width: 1050px) {
+  #lab > .wrap > .section-head {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  #lab .lab-guide {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 760px) {
+  #lab .lab-guide {
+    max-width: 100%;
+  }
+
+  #lab .lab-guide-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+
+/* =========================================
+   SECTION 04 - SPACE OPTIMISATION
+   KEEP ALL EXISTING FONT SIZES
+========================================= */
+
+/* Reduce unnecessary space around the section */
+#lab {
+  padding-top: 20px !important;
+  padding-bottom: 24px !important;
+}
+
+/* Heading and anime guide stay side by side */
+#lab > .wrap > .section-head {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 480px;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+/* Keep heading text compact */
+#lab > .wrap > .section-head h2 {
+  margin-bottom: 5px !important;
+}
+
+#lab > .wrap > .section-head .lead {
+  margin-bottom: 0 !important;
+}
+
+/* Make the anime guide fit neatly */
+#lab .lab-guide {
+  margin: 0 !important;
+  max-width: 480px;
+  justify-self: end;
+}
+
+/* Reduce excessive space between dashboard elements */
+#lab .card {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Use tighter spacing for dashboard layouts */
+#lab .lab-layout,
+#lab .lab-content,
+#lab .dashboard-grid,
+#lab .kpi-grid,
+#lab .module-grid {
+  gap: 12px !important;
+}
+
+/* Remove unnecessary large minimum heights */
+#lab .dashboard-card,
+#lab .lab-panel,
+#lab .module-card {
+  min-height: 0 !important;
+}
+
+/* Keep KPI cards compact */
+#lab .kpi-card,
+#lab .metric {
+  padding: 12px 15px !important;
+}
+
+/* Reduce space above and below panel headings */
+#lab .card h3,
+#lab .card h4 {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+/* Improve paragraph spacing without changing font sizes */
+#lab .card p {
+  margin-top: 0;
+  margin-bottom: 8px !important;
+  line-height: 1.5 !important;
+}
+
+/* Make buttons and tabs more compact */
+#lab .tabs,
+#lab .tab-row,
+#lab .module-tabs {
+  gap: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+/* Reduce excess space inside panels */
+#lab .dashboard-card,
+#lab .lab-panel,
+#lab .module-card {
+  padding: 14px !important;
+}
+
+/* Remove bottom gaps from final elements */
+#lab .card > :last-child,
+#lab .lab-panel > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  #lab > .wrap > .section-head {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  #lab .lab-guide {
+    justify-self: start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  #lab .lab-layout,
+  #lab .lab-content,
+  #lab .dashboard-grid,
+  #lab .kpi-grid,
+  #lab .module-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* FINAL REBUILD: compact sections 05, 06 and 07, without changing font sizes */
+#projects,#consulting,#beyond{padding-top:19px!important;padding-bottom:22px!important}
+#projects>.wrap>.section-head,#consulting>.wrap>.section-head,#beyond>.wrap>.section-head{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(350px,465px);align-items:center;gap:14px;margin-bottom:12px!important}
+.section-guide{display:flex;align-items:center;gap:11px;padding:9px 11px;background:#fff1cf;border:1px solid #e9bd69;border-radius:14px;box-shadow:0 5px 16px #182a4214;min-width:0}
+.section-guide img{width:68px;height:68px;object-fit:cover;object-position:top;border-radius:10px;flex:none}
+.section-guide-copy{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1;line-height:1.4}
+.section-guide-copy strong{color:#a54387}
+.section-guide-copy span{color:#29445d}
+.section-guide-play{background:#138eb0;color:white;border:0;border-radius:8px;padding:9px 12px;font-weight:800;white-space:nowrap}
+.section-guide-play:hover{background:#0b7595}
+#projects .section-head h2,#consulting .section-head h2,#beyond .section-head h2{margin-bottom:3px}
+#projects .section-head .lead,#consulting .section-head .lead,#beyond .section-head .lead{margin-bottom:0}
+#projects #projectFilters{margin:0 0 10px!important;gap:7px}
+#projects #projectCards{grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;align-items:start}
+#projects .project-card{gap:7px;padding:14px 16px;min-height:0!important;height:auto!important}
+#projects .project-card h3{margin-bottom:2px}
+#projects .project-card p{margin-bottom:3px}
+#projects .project-card .btn{margin-top:5px;align-self:flex-start}
+#projects .project-extra{margin-top:2px}
+#consulting .consulting-layout{grid-template-columns:minmax(245px,.72fr) minmax(0,1.55fr);gap:11px;align-items:start}
+#consulting .consulting-layout>.card{padding:14px;min-width:0}
+#consulting .consulting-image{height:205px;object-fit:cover}
+#consulting .consulting-panel{min-height:0!important;margin-top:8px}
+#consulting .controls{margin:9px 0 4px;gap:6px}
+#consulting .metric strong{line-height:1.1}
+#beyond .beyond-layout{grid-template-columns:minmax(245px,.72fr) minmax(0,1.55fr);gap:11px;align-items:start}
+#beyond .beyond-layout .card{padding:14px}
+#beyond .swim-photo{height:255px}
+#beyond .beyond-layout .grid{gap:9px}
+#beyond .beyond-layout .card[style]{margin-top:9px!important}
+#beyond .gallery{margin-top:10px;gap:9px}
+#beyond .gallery img{height:125px}
+#beyond .gallery figcaption{margin-top:2px}
+@media(max-width:1050px){#projects>.wrap>.section-head,#consulting>.wrap>.section-head,#beyond>.wrap>.section-head{grid-template-columns:1fr}.section-guide{max-width:480px}#projects #projectCards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){#projects #projectCards,#consulting .consulting-layout,#beyond .beyond-layout{grid-template-columns:1fr}.section-guide{max-width:100%}#beyond .swim-photo{height:230px}}
+@media(max-width:480px){#projects #projectCards{grid-template-columns:1fr}.section-guide img{width:56px;height:56px}}
+
+/* Section 05 only: six-project, single-screen explorer */
+#projects{--accent:#3976a8;background:#eaf2fa;padding:12px 0 16px!important}
+#projects>.wrap{max-width:1600px;padding:0 18px}
+#projects>.wrap>.section-head{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(320px,465px);gap:12px;align-items:center;margin-bottom:8px!important}
+#projects .section-head h2{font-size:clamp(24px,2.4vw,34px);margin:2px 0 3px}
+#projects .section-head .lead{font-size:12px;margin:0}
+#projects .section-guide{padding:6px 9px;min-height:76px}
+#projects .section-guide img{width:62px;height:62px}
+#projects .ap-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin:5px 0 8px}
+#projects .ap-main-tab{border:1px solid #c8daeb;background:#fff;border-radius:10px;min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:9px 6px;color:#234b70;font-size:12px;font-weight:700;line-height:1.15;min-height:42px}
+#projects .ap-main-tab b{font-size:16px;color:#3b80b7}
+#projects .ap-main-tab.active{background:#d7e9fa;border-color:#75a8d3;box-shadow:inset 0 -3px #3b80b7}
+#projects .ap-stage{background:#fff;border:1px solid #d6e4f0;border-radius:15px;padding:12px 14px;box-shadow:0 4px 15px #1c4d7b0a}
+#projects .ap-project-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+#projects .ap-project-head h3{font-size:20px;margin:0 0 2px;color:#1a466a}
+#projects .ap-kicker{font-size:10px;letter-spacing:.1em;color:#4b83b1;font-weight:800}
+#projects .ap-tags{font-size:12px;color:#647d94;margin:0}
+#projects .ap-link{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:9px 13px;border-radius:8px;background:#174c76;color:#fff;text-decoration:none;font-size:12px;font-weight:800}
+#projects .ap-content{display:grid;grid-template-columns:minmax(210px,.95fr) minmax(0,2.1fr);gap:12px;align-items:stretch}
+#projects .ap-visual{border-radius:11px;background:linear-gradient(140deg,#dbeafa,#f2f7fd);border:1px solid #d4e3f0;overflow:hidden;min-height:260px;max-height:calc(100vh - 285px)}
+#projects .ap-visual img{width:100%;height:100%;max-height:calc(100vh - 285px);min-height:260px;object-fit:contain;display:block}
+#projects .ap-image-fallback{height:100%;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:18px;color:#245b84}
+#projects .ap-image-fallback[hidden]{display:none}
+#projects .ap-image-fallback span{font-size:12px;letter-spacing:.14em}
+#projects .ap-image-fallback strong{font-size:18px;line-height:1.3}
+#projects .ap-image-fallback small{font-size:11px;color:#587d9e}
+#projects .ap-details{min-width:0;display:flex;flex-direction:column;gap:8px}
+#projects .ap-subtabs{display:flex;flex-wrap:wrap;gap:5px}
+#projects .ap-subtab{background:#eff5fb;border:1px solid #d3e2f0;border-radius:7px;color:#2b5e86;font-size:11px;font-weight:800;padding:7px 9px;line-height:1.2}
+#projects .ap-subtab.active{background:#246c9d;border-color:#246c9d;color:white}
+#projects .ap-detail-body{background:#f6f9fd;border:1px solid #e0eaf3;border-radius:10px;padding:14px 16px;min-height:240px;flex:1}
+#projects .ap-subpanel h4{font-size:17px;color:#1b4d74;margin:0 0 9px}
+#projects .ap-subpanel p,#projects .ap-subpanel li{font-size:clamp(12px,1.08vw,15px);line-height:1.53;color:#29445e;margin:0 0 7px}
+#projects .ap-subpanel ul{margin:0 0 8px;padding-left:20px;columns:2;column-gap:20px}
+#projects .ap-subpanel li{break-inside:avoid;margin-bottom:5px}
+@media(min-width:1100px) and (min-height:680px){#projects .ap-stage{min-height:min(490px,calc(100vh - 205px))}#projects .ap-content{min-height:min(395px,calc(100vh - 300px))}}
+@media(max-width:1000px){#projects .ap-main-tab{flex-direction:column;gap:3px;font-size:10px}#projects .ap-content{grid-template-columns:35% 1fr}#projects .ap-subpanel ul{columns:1}}
+@media(max-width:760px){#projects>.wrap>.section-head{grid-template-columns:1fr!important}#projects .ap-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}#projects .ap-content{grid-template-columns:1fr}#projects .ap-visual,#projects .ap-visual img{height:185px;min-height:185px;max-height:185px}#projects .ap-main-tab{flex-direction:row}#projects .ap-stage{padding:10px}#projects .ap-project-head{align-items:flex-start}#projects .ap-subpanel ul{columns:1}}
+
+/* SECTION 06 ONLY: compact sage green consulting case study */
+#consulting{background:#f1f8f2;color:#264a39;}
+#consulting .consult6-shell{background:#e6f3e8;border:1px solid #d0e5d4;border-radius:18px;padding:14px 17px;max-width:100%;}
+#consulting .consult6-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,450px);gap:14px;align-items:center;margin-bottom:9px;}
+#consulting .eyebrow{color:#408260;}#consulting h2{color:#214b37;font-size:clamp(23px,2.2vw,33px);line-height:1.1;margin:4px 0;}
+#consulting .consult6-subtitle{color:#608573;font-size:13px;margin:4px 0;}
+#consulting .section-guide{margin:0;min-height:0;padding:7px 9px;background:#fff7dd;border-color:#ead39b;}
+#consulting .section-guide img{width:49px;height:49px;}#consulting .section-guide-copy{font-size:12px;line-height:1.25;}
+#consulting .consult6-top{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;margin-bottom:9px;}
+#consulting .consult6-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+#consulting .consult6-steps>div{display:flex;flex-direction:column;align-items:center;justify-content:center;background:white;border-radius:11px;padding:8px 6px;gap:2px;text-align:center;}
+#consulting .consult6-steps b{font-size:12px;color:#438363;}#consulting .consult6-steps strong{font-size:14px;color:#234b38;}#consulting .consult6-steps small{font-size:11px;color:#638774;}
+#consulting .consult6-document{display:inline-flex;align-items:center;justify-content:center;background:#2f8a5d;color:#fff!important;border-radius:10px;padding:14px 16px;text-align:center;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.15px;box-shadow:0 4px 12px #205b3933;max-width:255px;line-height:1.3;}
+#consulting .consult6-document:hover{background:#236d49;transform:translateY(-1px)}
+#consulting .consult6-work{background:#fff;border:1px solid #d7e9dc;border-radius:13px;padding:11px 13px;}
+#consulting .consult6-work-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}#consulting .consult6-work-head h3,#consulting .consult6-contribution h3{font-size:15px;color:#264b37;margin:0;}#consulting .consult6-work-head span{font-size:11px;color:#5d806e;}
+#consulting .consult6-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin-bottom:8px;}
+#consulting .consult6-tabs button{cursor:pointer;border:1px solid #d5e8d9;border-radius:8px;padding:8px 4px;background:#f1f7f2;color:#37694e;font-size:11px;font-weight:700;}
+#consulting .consult6-tabs button[aria-selected="true"]{background:#398961;color:white;border-color:#398961;}
+#consulting .consult6-panel{background:#f5faf6;border:1px solid #e0ece2;border-radius:10px;padding:11px 13px;min-height:175px;max-height:220px;overflow-y:auto;scrollbar-width:thin;}
+#consulting .consult6-panel .kicker{font-size:10px;font-weight:800;letter-spacing:.6px;color:#3d8a5d;margin:0 0 4px;}#consulting .consult6-panel h4{font-size:17px;color:#23533b;margin:0 0 4px;}#consulting .consult6-panel .sub{font-size:12px;color:#4b8061;font-weight:700;margin:0 0 6px;}#consulting .consult6-panel p{font-size:12px;line-height:1.45;color:#355c46;margin:0 0 7px;}#consulting .consult6-panel ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:4px;padding-left:17px;margin:5px 0;}#consulting .consult6-panel li{font-size:12px;line-height:1.35;color:#355c46;}#consulting .consult6-panel strong{color:#24583c;}
+#consulting .consult6-nav{display:flex;justify-content:space-between;align-items:center;margin-top:8px;}#consulting .consult6-nav button{border:1px solid #bad9c4;background:#fff;color:#286544;border-radius:7px;padding:6px 11px;font-size:11px;font-weight:700;cursor:pointer;}#consulting .consult6-nav button:disabled{opacity:.35;cursor:default;}#consulting .consult6-nav span{font-size:11px;color:#608573;}
+#consulting .consult6-contribution{background:#fff;border:1px solid #d7e9dc;border-radius:12px;padding:10px 13px;margin-top:9px;}#consulting .consult6-skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:8px;}#consulting .consult6-skills>div{border-left:3px solid #8fc8a0;padding-left:9px;display:flex;flex-direction:column;gap:3px;}#consulting .consult6-skills strong{font-size:12px;color:#275a3d;}#consulting .consult6-skills span{font-size:11px;line-height:1.3;color:#587965;}
+@media(min-width:1050px) and (min-height:720px){#consulting .consult6-shell{min-height:0;}}
+@media(max-width:900px){#consulting .consult6-heading{grid-template-columns:1fr;}#consulting .consult6-top{grid-template-columns:1fr;}#consulting .consult6-document{max-width:none;}#consulting .consult6-tabs{grid-template-columns:repeat(3,minmax(0,1fr));}#consulting .consult6-skills{grid-template-columns:repeat(2,minmax(0,1fr));}#consulting .consult6-panel{max-height:none;}}
+@media(max-width:540px){#consulting .consult6-shell{padding:10px;}#consulting .consult6-steps strong{font-size:12px;}#consulting .consult6-steps small{font-size:10px;}#consulting .consult6-panel ul{grid-template-columns:1fr;}#consulting .consult6-skills{grid-template-columns:1fr 1fr;}}
+
+/* 2026 portfolio refresh: navy, teal and terracotta with warm white backgrounds. */
+:root{--ink:#19364d;--muted:#50677a;--teal:#087f89;--copper:#b5654a;--navy:#19476c;--line:#d6e3e8;--shadow:0 7px 22px #1c4a6512}
+body{background:#f8faf9;color:var(--ink)}nav{background:#fffefa}.links{gap:9px}.links a{font-size:11px;white-space:nowrap}.links a:hover{color:#087f89}
+#home{background:linear-gradient(115deg,#edf7f7 0%,#f9fbf8 60%,#fff2e9 100%);color:var(--ink);padding:26px 0 30px;--accent:#087f89}
+#home .eyebrow{color:#087f89}#home h1 em{color:#b5654a}#home p{color:#38546a}#home strong{color:#19364d}
+#home .hero-photo{border-color:#c6dadd;max-height:400px}#home .hero-guide{background:#fff;border-color:#b9d5d8;color:#19364d;box-shadow:var(--shadow)}#home .hero-guide h3{color:#19364d}#home .hero-guide p,#home .hero-guide .guide-hint{color:#50677a}#home .hero-guide .btn{background:#b5654a;color:#fff;border-color:#b5654a}
+#home .hero .btn.primary{background:#087f89;border-color:#087f89;color:#fff}
+#story{background:#eff7f7;--accent:#087f89}#bring{background:#f3f6fb;--accent:#19476c}#experience{background:#fff7f2;--accent:#b5654a}#lab{background:#eef5f9;--accent:#19476c}#consulting{background:#f1f8f7;--accent:#087f89}#projects{background:#f1f5fa;--accent:#19476c}#financial-projects{background:#f7faf9;--accent:#087f89}#beyond{background:#fff7f2;--accent:#b5654a}#connect{background:#edf4f6;color:#19364d;--accent:#19476c}#connect .contact-links a{color:#19476c}#connect .footer-note{color:#52677a}
+.section{border-top:3px solid var(--accent)}.section-guide,.story-guide-mini,.experience-guide,#lab .lab-guide{background:#fff;border-color:#d4e3e8}.section-guide-copy strong,.story-guide-message strong,.experience-guide-text strong,#lab .lab-guide-text strong{color:#b5654a}
+.section-guide-play,.story-guide-play,.experience-guide-play,#lab .lab-guide-play{background:#087f89}
+#story .interest-option[data-interest=accounting]{background:#f9e9e1}#story .interest-option.active[data-interest=accounting]{border-color:#b5654a;box-shadow:0 0 0 2px #f3cdbb}#story .interest-details.accounting-theme{background:linear-gradient(135deg,#fff4ee,#f7e1d7)}
+#story .interest-menu{grid-template-columns:repeat(2,minmax(0,1fr))}#story .interest-option{font-size:12px;padding:7px 9px}
+#story .story-paragraphs{gap:7px;justify-content:flex-start}#story .story-paragraphs p{line-height:1.4!important}#story .story-copy{padding:13px 15px!important}
+#bring{padding:20px 0 25px}#bring>.wrap>.section-head,#financial-projects>.wrap>.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,465px);align-items:center;gap:16px;margin-bottom:14px}
+.bring-layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:14px}.bring-menu{display:grid;gap:9px}.bring-option{text-align:left;border:1px solid #d6e3e8;background:#fff;border-radius:13px;padding:16px;font-weight:800;color:#19476c;display:flex;gap:14px;align-items:center}.bring-option small{color:#b5654a}.bring-option.active{background:#19476c;color:#fff}.bring-option.active small{color:#a9dce1}.bring-detail{min-height:310px;padding:25px}.bring-detail h3{color:#19476c}.bring-detail p{line-height:1.65}.bring-detail ul{columns:2;gap:24px;padding-left:18px}.bring-detail li{margin:0 0 10px;break-inside:avoid}
+#financial-projects{padding:22px 0 30px}.financial-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.financial-card{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto auto auto auto;gap:4px;text-decoration:none;border:1px solid #d4e3e8;background:#fff;border-radius:16px;padding:19px 22px;min-height:195px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}.financial-card:hover{transform:translateY(-3px);border-color:#087f89}.financial-icon{grid-column:1;font-size:25px;color:#087f89}.financial-number{grid-column:2;grid-row:1;color:#698194;font-size:12px}.financial-category{font-size:11px;letter-spacing:.09em;color:#b5654a;font-weight:800}.financial-card h3{margin:0;color:#19476c}.financial-card p{margin:0;color:#50677a}.financial-action{grid-column:1/-1;border-top:1px solid #e4ecf0;padding-top:10px;color:#087f89;font-weight:800}.financial-note{font-size:12px;color:#50677a;margin:10px 0 0}
+.contact-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.contact-directory a,.contact-directory>div{display:flex;flex-direction:column;text-decoration:none;background:#fff;border:1px solid #d4e3e8;border-radius:12px;padding:14px;overflow-wrap:anywhere}.contact-directory strong{color:#b5654a}.contact-directory span{color:#19476c}
+@media(min-width:1100px){#home .hero{min-height:min(66vh,610px)}#story .story-layout{grid-template-columns:minmax(170px,.65fr) minmax(0,1.85fr) minmax(320px,1.25fr)}#story .story-portrait{height:275px}}
+@media(max-width:1100px){#bring>.wrap>.section-head,#financial-projects>.wrap>.section-head{grid-template-columns:1fr}.bring-layout{grid-template-columns:220px 1fr}}
+@media(max-width:760px){.bring-layout,.financial-gallery{grid-template-columns:1fr}.bring-detail ul{columns:1}.contact-directory{grid-template-columns:1fr 1fr}#home .hero{min-height:0}#story .interest-menu{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.contact-directory{grid-template-columns:1fr}.bring-menu{grid-template-columns:1fr 1fr}.bring-option{padding:11px;font-size:12px}.financial-card{min-height:175px}}
+
+/* FINAL DESIGN SYSTEM: NAVY, CYAN, GOLDEN YELLOW, WHITE */
+:root{--navy:#142740;--navy2:#1b3655;--cyan:#56cfe1;--cyan-deep:#087e98;--gold:#f2bf5b;--ink:#19334c;--muted:#536a7e;--line:#d5e6ed;--teal:#087e98;--copper:#b98728;--shadow:0 8px 25px #102b4610}
+body{background:#f7fafc;color:var(--ink)}.section{border-top:3px solid var(--accent)}
+#home{background:linear-gradient(125deg,#13243c 0%,#1c3553 72%,#234665 100%);color:white;--accent:var(--cyan);padding:36px 0}
+#home .eyebrow{color:var(--gold)}#home h1{color:#fff}#home h1 em{color:var(--cyan)}#home .hero p{color:#e8f3f9;font-size:clamp(17px,1.48vw,21px)!important;line-height:1.72!important}#home .hero p strong{color:#fff;font-weight:800}#home .hero-guide{background:#203d5c;border-color:#4e9ab0;color:#fff}#home .hero-guide h3{color:white}#home .hero-guide p,#home .hero-guide .guide-hint{color:#e2f2f8}#home .hero-guide p{font-size:14px!important}#home .hero-guide .btn{background:var(--gold);border-color:var(--gold);color:var(--navy)}#home .hero .btn.primary{background:var(--cyan);border-color:var(--cyan);color:var(--navy)}#home .hero-photo{border-color:#71c8d8}
+#story{background:#f0f8fc;--accent:#1789a4}#bring{background:#fffdf5;--accent:#e2ae42}#experience{background:#f0f7fc;--accent:#268aa5}#financial-projects{background:#fffaf0;--accent:#e0ad3b}#projects{background:#eef8fc;--accent:#2589ad}#beyond{background:#f6f9ff;--accent:#e2b044}#connect{background:#142740;color:#fff;--accent:#56cfe1}
+#connect .contact-directory a,#connect .contact-directory>div{background:#203955;border-color:#3c5c74}#connect .contact-directory strong{color:var(--gold)}#connect .contact-directory span{color:#eaf6fb}#connect .footer-note{color:#b9d1e0}
+.eyebrow{color:var(--accent)}.btn.primary,.tab[aria-selected=true],.chip.active{background:var(--navy2);border-color:var(--navy2)}.btn:hover{filter:brightness(.97)}
+.story-guide-mini,.experience-guide,.section-guide{background:#fffdf6;border-color:#e7d59f}.story-guide-message strong,.experience-guide-text strong,.section-guide-copy strong{color:#1c6880}.story-guide-play,.experience-guide-play,.section-guide-play{background:#176e91}
+#story .interest-option[data-interest=analytics]{background:#e2f6ff}#story .interest-option[data-interest=finance]{background:#fff3d5}#story .interest-option[data-interest=economics]{background:#e8f0fc}#story .interest-option[data-interest=accounting]{background:#e5f4f3}#story .interest-option.active[data-interest=accounting]{border-color:#189eaf;box-shadow:0 0 0 2px #b9ecf0}#story .interest-details.accounting-theme{background:#e5f4f3}
+#bring .bring-option{border-color:#d8e6ec;color:var(--navy2)}#bring .bring-option small{color:#a77a1d}#bring .bring-option.active{background:var(--navy2);color:#fff}#bring .bring-option.active small{color:var(--gold)}#bring .bring-detail{min-height:0;padding:20px}#bring .bring-detail li{margin-bottom:7px}#bring .bring-detail h3{color:var(--navy2)}#bring .bring-detail p{line-height:1.5}#bring .bring-layout{gap:12px}
+#experience .exp-tile{--tile:#e8f6fb!important}#experience .exp-tile:nth-child(even){--tile:#fff3d9!important}#experience .detail-columns h4{color:#166783}
+#financial-projects .financial-gallery{gap:15px}.financial-item{display:flex;flex-direction:column;min-width:0}.financial-item .financial-card{flex:1}.financial-source{align-self:flex-start;margin:9px 0 4px 5px;color:#125e81;font-size:13px;font-weight:800;text-decoration:none;border-bottom:1px solid #f2bf5b;padding-bottom:2px}.financial-source:hover{text-decoration:underline}.financial-card{border-color:#dce9ee}.financial-card:hover{border-color:#34adc6}.financial-card h3{color:var(--navy2)}.financial-category{color:#997018}.financial-icon,.financial-action{color:#0d7c9c}
+#projects .ap-main-tab.active{background:#d9f2f8;border-color:#55b8ce;box-shadow:inset 0 -3px #1689a3}#projects .ap-subtab.active{background:#1c6686;border-color:#1c6686}
+#beyond .section-head{margin-bottom:16px!important}#beyond .section-head h2{color:var(--navy2)}.swim-story{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:17px;align-items:stretch}.swim-copy{padding:23px 25px;display:flex;flex-direction:column;justify-content:space-between}.swim-copy p{font-size:clamp(15px,1.16vw,17px);line-height:1.66;margin-bottom:14px}.swim-copy strong{color:#145b80}.swim-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.swim-stats>div{background:#e8f6fb;border-radius:12px;padding:13px 9px;text-align:center}.swim-stats strong{display:block;font-size:clamp(19px,2.1vw,30px);color:#14476c}.swim-stats span{font-size:12px;color:#4a6579}.swim-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(140px,1fr);gap:10px}.swim-figure{margin:0;overflow:hidden;border-radius:13px;border:1px solid #d2e5ed;background:#e8f2f6}.swim-figure img{width:100%;height:100%;min-height:150px;object-fit:contain;object-position:center;display:block}.swim-feature{grid-row:span 2}.swim-feature img{object-fit:contain}
+/* Navigation with scrollable pill links and active section */
+nav{background:#142740;border-bottom:1px solid #3d5870;box-shadow:0 5px 24px #10253b2b}.navrow{min-height:76px;gap:20px}.brand{color:#fff;font-size:15px;letter-spacing:.06em}.brand span{color:var(--cyan)}.links{flex-wrap:nowrap;overflow-x:auto;gap:5px;scrollbar-width:thin;padding:8px 0}.links a{flex-shrink:0;font-size:11px;line-height:1.25;color:#dbe9f4;border:1px solid transparent;border-radius:100px;padding:11px 12px;transition:background .2s,border-color .2s,color .2s}.links a:hover{background:#284866;color:var(--gold)}.links a.active{background:#28546e;color:#fff;border-color:#56cfe1}.links a.active::first-letter{color:var(--gold)}.mobile-toggle{background:var(--gold);color:var(--navy);border-color:var(--gold)}.help-launcher{background:var(--gold);border-color:#f8d78b;color:var(--navy)}.help-head{background:var(--navy2)}.help-panel{border-color:#6bc5d6}
+@media(max-width:1100px){.swim-story{grid-template-columns:1fr}#bring .bring-layout{grid-template-columns:220px 1fr}}
+@media(max-width:760px){.links{background:var(--navy);flex-direction:column;align-items:stretch;max-height:70vh;overflow:auto}.links a{width:100%;border-radius:9px}.swim-story{grid-template-columns:1fr}.swim-photo-grid{grid-auto-rows:170px}.swim-feature{grid-row:span 2}#bring .bring-layout{grid-template-columns:1fr}#home .hero p{font-size:17px!important}}
+</style><style>
+/* Final Home introduction size and two project actions inside each white card */
+#home .hero > div p:not(.guide-hint) {font-size:15px!important;line-height:1.62!important}
+#home .hero-guide p {font-size:14px!important}
+#financial-projects .financial-card {display:flex;flex-direction:column;align-items:stretch;gap:7px}
+#financial-projects .financial-card .financial-number {align-self:flex-end}
+#financial-projects .financial-card .financial-actions {
+ display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:auto;
+ padding-top:12px;border-top:1px solid #e4ecf0;
+}
+#financial-projects .financial-actions a {
+ display:inline-flex;align-items:center;text-decoration:none;font-weight:800;
+ font-size:13px;line-height:1.3;padding:8px 10px;border-radius:8px;
+}
+#financial-projects .financial-actions .case-link {background:#e5f7fa;color:#087e98}
+#financial-projects .financial-actions .original-link {background:#fff3d8;color:#76521b}
+#financial-projects .financial-actions a:hover {filter:brightness(.95)}
+#financial-projects .financial-item>.financial-source {display:none!important}
+#voiceStatus {min-height:18px}
+</style></head><body>
+<nav><div class="wrap navrow"><a class="brand" href="#home">TRICIA <span>DE ROSE.</span></a><button aria-controls="navLinks" aria-expanded="false" class="btn mobile-toggle" id="mobileMenu">☰ Menu</button><div class="links" id="navLinks"><a href="#home">01 Home</a><a href="#story">02 About Me</a><a href="#bring">03 What I Bring</a><a href="#experience">04 Professional Experience</a><a href="#financial-projects">05 Accounting &amp; Financial Projects</a><a href="#projects">06 Academic Projects</a><a href="#beyond">07 Beyond the Numbers</a><a href="#connect">08 Contact</a></div></div></nav>
+<main>
+<section class="section" id="home"><div class="wrap hero"><img alt="Professional portrait of Tricia De Rose" class="hero-photo" src="images/image_01.webp"/><div><div class="eyebrow">BUSINESS ANALYTICS · FINANCE · ACCOUNTING</div><h1>Where Financial Insight Meets <em>Analytical Thinking.</em></h1><p>I'm <strong>Tricia De Rose</strong>, a <strong>Monash University Bachelor of Commerce</strong> graduate, majoring in <strong>Data Analytics</strong> with minors in <strong>Finance and Economics</strong>. Driven by curiosity and a passion for understanding the stories behind numbers, I combine <strong>business analytics, accounting, finance and economic thinking</strong> to explore complex challenges. From developing <strong>predictive models</strong> and analysing <strong>financial statements</strong> to evaluating <strong>business performance</strong> and understanding <strong>market dynamics</strong>, I use analytical reasoning and financial knowledge to uncover <strong>meaningful insights</strong>, transform complexity into clarity and support <strong>smarter business decisions</strong>.</p>
+<div class="controls"><a class="btn primary" href="#story">Explore My Portfolio →</a><a class="btn" href="https://drive.google.com/file/d/1dtHAjp8JX6RtFVSW5ajx86WpwPbrEM_1/view?usp=sharing" rel="noopener noreferrer" target="_blank">View My Resume ↗</a></div></div><aside aria-label="Interactive portfolio guide" class="hero-guide"><img alt="Illustrated Tricia, your portfolio guide" src="images/image_02.webp"/><div><h3>Hi! I'm Tricia 👋</h3><p>New here? I can guide you through my portfolio, one section at a time.</p><div class="guide-hint">Optional audio · Female voice · Adjustable speed</div></div><button class="btn" id="heroGuideBtn">▶ Click to Meet Your Guide</button></aside></div></section>
+<section class="section" id="story"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 · ABOUT ME</div><h2>About Me.</h2></div> <div class="story-guide-mini">
+<img alt="Tricia, your animated portfolio guide" class="story-guide-avatar" src="images/image_03.webp"/>
+<div class="story-guide-message">
+<strong>Hi! I'm Tricia 👋</strong>
+<span>Let me guide you through my story!</span>
+</div>
+<button class="story-guide-play" id="storyGuidePlay" type="button">
+    ▶ Play
+  </button>
+</div>
+</div><div class="story-layout"><div class="card"><img alt="Tricia at her Monash graduation" class="image story-portrait" src="images/image_04.webp"/><h3 style="margin-top:10px">Monash University</h3><p class="muted">Bachelor of Commerce</p></div>
+<article class="card story-copy">
+<div class="story-copy-heading">
+<span class="story-heading-line"></span>
+<h3>Why I Chose Commerce</h3>
+</div>
+<div class="story-paragraphs"><p>I chose to study <strong>Commerce</strong> because I wanted to understand how businesses operate, how financial decisions shape their success and how data can uncover opportunities for growth.</p><p>Throughout my degree at Monash University, I developed a strong foundation in <strong>Business Analytics</strong>, <strong>Finance</strong> and <strong>Economics</strong>. <strong>Data Analytics</strong> introduced me to programming, statistical modelling, machine learning and data visualisation. <strong>Finance</strong> strengthened my understanding of investment decisions, financial markets and corporate financial management, while <strong>Economics</strong> helped me explore market behaviour and broader economic trends.</p><p>My interest in <strong>Accounting</strong> grew through studying <strong>financial reporting</strong> and understanding how financial statements, accurate records and accounting processes reveal a business’s financial position and performance.</p><p>Through professional experience in <strong>financial reporting</strong>, <strong>business intelligence</strong> and accounting, I have been able to connect academic knowledge with practical business challenges.</p><p>I aspire to build a career across <strong>Business Analytics</strong>, <strong>Finance</strong> or <strong>Accounting</strong>, where I can continue developing my expertise and contribute to informed financial and strategic decisions.</p><p>For me, <strong>Commerce</strong> is about understanding the meaning behind numbers and using that knowledge to create meaningful business impact.</p></div>
+</article>
+<aside aria-label="Explore My Interests" class="card interest-card">
+<h3>Explore My Interests</h3>
+<p class="interests-subtitle">✨ Click a discipline to explore!</p>
+<div aria-label="Interest categories" class="interest-menu" id="interestTabs">
+<button aria-pressed="true" class="interest-option active" data-interest="analytics" type="button"><span>🧠   Analytics</span><span aria-hidden="true">›</span></button>
+<button aria-pressed="false" class="interest-option" data-interest="finance" type="button"><span>📈   Finance</span><span aria-hidden="true">›</span></button>
+<button aria-pressed="false" class="interest-option" data-interest="accounting" type="button">📒  Accounting ›</button><button aria-pressed="false" class="interest-option" data-interest="economics" type="button"><span>🌐   Economics</span><span aria-hidden="true">›</span></button>
+</div>
+<div aria-live="polite" class="interest-details analytics-theme" id="interestDetail"></div>
+</aside></div></div></section><section class="section" id="bring"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 · EXPERTISE</div><h2>What I Bring</h2><p class="lead">Combining Financial Knowledge with Analytical Expertise</p></div><div class="section-guide"><img alt="Portfolio audio guide" class="bring-guide-image" src="images/image_05.webp"/><div class="section-guide-copy"><strong>Hi! I'm Tricia 👋</strong><span>Select an expertise area to learn what I bring to a team.</span></div><button class="section-guide-play" data-guide-play="bring" type="button">▶ Play</button></div></div><div class="bring-layout"><div aria-label="Expertise areas" class="bring-menu" role="tablist"><button aria-selected="true" class="bring-option active" data-bring="0" role="tab"><small>01</small>Accounting &amp; Reporting</button><button aria-selected="false" class="bring-option" data-bring="1" role="tab"><small>02</small>Corporate Finance</button><button aria-selected="false" class="bring-option" data-bring="2" role="tab"><small>03</small>Business Analytics</button><button aria-selected="false" class="bring-option" data-bring="3" role="tab"><small>04</small>Financial Intelligence</button></div><div aria-live="polite" class="bring-detail card" id="bringDetail" role="tabpanel"></div></div></div></section>
+<section class="section" id="experience">
+<div class="wrap">
+<!-- HEADING AND ANIME GUIDE -->
+<div class="section-head">
+<div class="experience-heading">
+<div class="eyebrow">04 · PROFESSIONAL EXPERIENCE</div>
+<h2>Experience in Practice.</h2>
+<p class="lead">
+          Select a role to explore my work and what I learned.
+        </p>
+</div>
+<div class="experience-guide">
+<img alt="Tricia, your portfolio guide" class="experience-guide-image" src="images/image_06.webp"/>
+<div class="experience-guide-text">
+<strong>Hi! I'm Tricia 👋</strong>
+<span>
+            Click a role below to explore my experience!
+          </span>
+</div>
+<button class="experience-guide-play" id="experienceGuidePlay" type="button">
+          ▶ Play
+        </button>
+</div>
+</div> <!-- END SECTION HEAD -->
+<!-- FOUR EXPERIENCE CARDS -->
+<div class="experience-grid" id="experienceCards"></div>
+<!-- EXPANDED EXPLANATION BELOW THE CARDS -->
+<div aria-live="polite" class="card detail-panel" id="experienceDetail"></div>
+</div> <!-- END WRAP -->
+</section>
+<section class="section" id="financial-projects"><div class="wrap"><div class="section-head"><div><div class="eyebrow">05 · SELECTED WORK</div><h2>Accounting &amp; Financial Projects</h2><p class="lead">Financial analysis, accounting, business intelligence and investment decision-making.</p></div><div class="section-guide"><img alt="Portfolio audio guide" class="finance-guide-image" src="images/image_07.webp"/><div class="section-guide-copy"><strong>Hi! I'm Tricia 👋</strong><span>Choose any case study to open its interactive HTML page.</span></div><button class="section-guide-play" data-guide-play="financial-projects" type="button">▶ Play</button></div></div><div class="financial-gallery"><div class="financial-item"><div class="financial-card"><span class="financial-icon">▥</span><span class="financial-number">01 / 04</span><span class="financial-category">BUSINESS INTELLIGENCE</span><h3>Altria</h3><p>Financial Performance Reporting</p><div class="financial-actions"><a class="case-link" href="Altria_Portfolio_Case_Study_Final.html" rel="noopener noreferrer" target="_blank">Explore Case Study ↗</a><a class="original-link" href="https://drive.google.com/file/d/1VJZOyUhZxt6znbQ2hPPBBIRvwdb2I1Tg/view?usp=sharing" rel="noopener noreferrer" target="_blank">View My Original Project Document ↗</a></div></div></div><div class="financial-item"><div class="financial-card"><span class="financial-icon">◉</span><span class="financial-number">02 / 04</span><span class="financial-category">FINANCIAL ANALYTICS</span><h3>Smile Media</h3><p>Financial Reporting &amp; Receivables</p><div class="financial-actions"><a class="case-link" href="Smile_Media_Case_Study_Improved_Images.html" rel="noopener noreferrer" target="_blank">Explore Case Study ↗</a><a class="original-link" href="https://drive.google.com/file/d/1vlV9MYrMndsBxeNqY2jrMaJdbab4O_rM/view?usp=sharing" rel="noopener noreferrer" target="_blank">View My Original Project Document ↗</a></div></div></div><div class="financial-item"><div class="financial-card"><span class="financial-icon">↗</span><span class="financial-number">03 / 04</span><span class="financial-category">FINANCIAL MODELLING</span><h3>Corporate Finance</h3><p>Investment &amp; Risk Analysis</p><div class="financial-actions"><a class="case-link" href="Corporate_Finance_Investment_Risk_Interactive_Portfolio.html" rel="noopener noreferrer" target="_blank">Explore Case Study ↗</a><a class="original-link" href="https://drive.google.com/file/d/1deZQc9Aq8BIANN71Crslr43CQkLTxcxi/view?usp=sharing" rel="noopener noreferrer" target="_blank">View My Original Project Document ↗</a></div></div></div><a class="financial-card" href="Bluewater_Accounting_Enhanced_Visual_Dashboard.html" rel="noopener" target="_blank"><span class="financial-icon">▤</span><span class="financial-number">04 / 04</span><span class="financial-category">PRACTICAL ACCOUNTING</span><h3>Bluewater</h3><p>Accounting &amp; Reconciliation · Simulated Case Study</p><span class="financial-action">Explore Case Study ↗</span></a></div><p class="financial-note">Case studies open as separate HTML pages. Keep these four files in the same folder as this portfolio.</p></div></section><section class="section" id="projects"><div class="wrap"><div class="section-head"><div><div class="eyebrow">06 · ACADEMIC PROJECTS</div><h2>Ideas, Models &amp; Applications.</h2><p class="lead">Six academic projects spanning machine learning, statistical research, database engineering, programming, visualisation and economics.</p></div><div class="section-guide"><img alt="Illustrated Tricia, portfolio guide" src="images/image_08.webp"/><div class="section-guide-copy"><strong>Hi! I'm Tricia 👋</strong><span>Choose a project category, then click Explore Project to see my methods and outcomes.</span></div><button class="section-guide-play" data-guide-play="projects" type="button">▶ Play</button></div></div>
+<div aria-label="Select academic project" class="ap-tabs" role="tablist"><button aria-selected="true" class="ap-main-tab active" data-ap-select="0" role="tab" type="button"><b>01</b><span>Healthcare ML</span></button><button aria-selected="false" class="ap-main-tab" data-ap-select="1" role="tab" type="button"><b>02</b><span>Bushfire Dashboard</span></button><button aria-selected="false" class="ap-main-tab" data-ap-select="2" role="tab" type="button"><b>03</b><span>Statistical Modelling</span></button><button aria-selected="false" class="ap-main-tab" data-ap-select="3" role="tab" type="button"><b>04</b><span>Applied Economics</span></button><button aria-selected="false" class="ap-main-tab" data-ap-select="4" role="tab" type="button"><b>05</b><span>Retail SQL Database</span></button><button aria-selected="false" class="ap-main-tab" data-ap-select="5" role="tab" type="button"><b>06</b><span>Metro Route Simulator</span></button></div><div class="ap-stage"><div class="ap-project" data-ap-project="0">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 01 / 06</span><h3>Predictive Healthcare Analytics</h3><p class="ap-tags">R Programming | Machine Learning</p></div><a class="ap-link" href="https://drive.google.com/file/d/1RHAJ7L0_zUIns284usPkhg2ZsUfPJ0d0/view?usp=sharing" rel="noopener noreferrer" target="_blank">View project ↗</a></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Predictive Healthcare Analytics" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-01.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 01</span><strong>Predictive Healthcare Analytics</strong><small>Place your screenshot at images/project-01.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="0-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="0-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="0-2" role="tab" type="button">Machine Learning Models &amp; Evaluation</button><button aria-selected="false" class="ap-subtab" data-ap-sub="0-3" role="tab" type="button">Key Findings</button><button aria-selected="false" class="ap-subtab" data-ap-sub="0-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="0-0" role="tabpanel"><h4>Project Overview</h4><p>This project applied machine learning techniques to predict in-hospital mortality using 15,664 ICU patient records from the MIMIC-III dataset. Using R, I developed and compared 10 model configurations, incorporating clinical data preprocessing, feature engineering and predictive modelling. The objective was to identify the most effective classification approach for distinguishing patient mortality outcomes.</p></article><article class="ap-subpanel" data-ap-detail="0-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Predicting mortality among critically ill patients is challenging due to complex clinical relationships, missing information and imbalanced outcomes. The project investigated whether admission-time vital signs, demographic characteristics and diagnosis information could support reliable mortality predictions. It also examined how different machine learning approaches balanced predictive accuracy, complexity and generalisation to unseen patients.</p></article><article class="ap-subpanel" data-ap-detail="0-2" hidden="" role="tabpanel"><h4>Machine Learning Models &amp; Evaluation</h4><ul><li>Logistic Regression and Regularised Logistic Regression</li><li>K-Nearest Neighbours (KNN)</li><li>Decision Trees and Regularised Decision Trees</li><li>Random Forest and Extremely Randomised Trees</li><li>Neural Networks</li><li>Gradient Boosting Machine (GBM) and XGBoost</li></ul><p>Models were evaluated using training and hold-out ROC-AUC.</p></article><article class="ap-subpanel" data-ap-detail="0-3" hidden="" role="tabpanel"><h4>Key Findings</h4><p>XGBoost achieved the highest hold-out ROC-AUC of 0.9575, outperforming Regularised Logistic Regression (0.9369) and Random Forest (0.9318). KNN and Neural Networks exhibited overfitting, highlighting the importance of generalisation.</p></article><article class="ap-subpanel" data-ap-detail="0-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>Strengthened my R programming, feature engineering, classification modelling and evaluation skills. Learned to balance predictive performance, interpretability and overfitting when analysing complex healthcare data.</p></article></div></div></div>
+</div><div class="ap-project" data-ap-project="1" hidden="">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 02 / 06</span><h3>Australian Bushfire Data Dashboard</h3><p class="ap-tags">Data Visualisation | Interactive Dashboards</p></div><a class="ap-link" href="https://tricia-de-rose.github.io/3179/" rel="noopener noreferrer" target="_blank">View project ↗</a></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Australian Bushfire Data Dashboard" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-02.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 02</span><strong>Australian Bushfire Data Dashboard</strong><small>Place your screenshot at images/project-02.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="1-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="1-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="1-2" role="tab" type="button">Technical Implementation</button><button aria-selected="false" class="ap-subtab" data-ap-sub="1-3" role="tab" type="button">Key Findings</button><button aria-selected="false" class="ap-subtab" data-ap-sub="1-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="1-0" role="tabpanel"><h4>Project Overview</h4><p>Developed an interactive Australian bushfire dashboard exploring the relationships between bushfire activity, climatic conditions, geographic patterns and environmental impacts. The project focused on transforming complex environmental datasets into accessible visual insights through interactive charts, maps and analytical storytelling.</p></article><article class="ap-subpanel" data-ap-detail="1-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Australian bushfires are influenced by interconnected environmental factors, making their patterns difficult to communicate through raw data alone. The challenge was to present geographic differences, climate-related conditions and bushfire impacts in a way that allowed users to explore relationships and interpret information clearly.</p></article><article class="ap-subpanel" data-ap-detail="1-2" hidden="" role="tabpanel"><h4>Technical Implementation</h4><ul><li>Geospatial Visualisation: Geographic maps to communicate regional patterns.</li><li>Comparative Analysis: Charts examining differences across environmental variables.</li><li>Temporal Analysis: Visual representations of changes and trends over time.</li><li>Interactive Design: User-driven exploration and comparisons.</li><li>Visual Encoding: Colour, scale and chart selection to improve readability.</li><li>Visual Storytelling: Structured explanations connecting data to insights.</li></ul></article><article class="ap-subpanel" data-ap-detail="1-3" hidden="" role="tabpanel"><h4>Key Findings</h4><p>The dashboard illustrates how geographic location, environmental conditions and bushfire impacts can be examined together, revealing patterns that are less apparent when datasets are viewed separately.</p></article><article class="ap-subpanel" data-ap-detail="1-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>Strengthened my understanding of visual hierarchy, geospatial analysis, interactive design and effective data communication. Learned to minimise visual clutter, select appropriate chart types and transform complex information into an engaging analytical narrative</p></article></div></div></div>
+</div><div class="ap-project" data-ap-project="2" hidden="">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 03 / 06</span><h3>Statistical Modelling &amp; Inference</h3><p class="ap-tags">R Programming | Statistical Modelling | Probability Distributions | Bootstrap Analysis</p></div></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Statistical Modelling &amp; Inference" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-03.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 03</span><strong>Statistical Modelling &amp; Inference</strong><small>Place your screenshot at images/project-03.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="2-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="2-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="2-2" role="tab" type="button">Statistical Methods &amp; Evaluation</button><button aria-selected="false" class="ap-subtab" data-ap-sub="2-3" role="tab" type="button">Key Findings</button><button aria-selected="false" class="ap-subtab" data-ap-sub="2-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="2-0" role="tabpanel"><h4>Project Overview</h4><p>This project analysed hourly pedestrian movements across three Melbourne locations: Southern Cross, Flinders Street and QV Melbourne. Using R, our team applied probability distributions, maximum likelihood estimation and statistical inference to model pedestrian traffic. We compared statistical models, evaluated their goodness of fit and constructed confidence intervals to support infrastructure planning and advertising decisions.</p></article><article class="ap-subpanel" data-ap-detail="2-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Pedestrian volumes fluctuate considerably, making accurate traffic estimates essential for urban planning. The challenge was to identify a probability distribution that captured this variability and estimate peak pedestrian demand. We also investigated how statistical uncertainty could be quantified to support decisions about crossing capacity and commercial advertising opportunities.</p></article><article class="ap-subpanel" data-ap-detail="2-2" hidden="" role="tabpanel"><h4>Statistical Methods &amp; Evaluation</h4><ul><li>Distributions: Poisson, Negative Binomial, Geometric and Discrete Uniform.</li><li>Model Selection: Maximum Likelihood Estimation, AIC and BIC.</li><li>Diagnostics: Q-Q plots and distribution comparisons.</li><li>Inference: 5,000 bootstrap resamples and 95% confidence intervals.</li></ul></article><article class="ap-subpanel" data-ap-detail="2-3" hidden="" role="tabpanel"><h4>Key Findings</h4><p>The Negative Binomial distribution provided the best fit across all three locations, outperforming Poisson by accounting for overdispersion. QV Melbourne recorded the highest average pedestrian volume at 2,336.7 pedestrians per hour, compared with Southern Cross (941.8) and Flinders Street (893.0).</p></article><article class="ap-subpanel" data-ap-detail="2-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>Strengthened my R programming, statistical modelling and uncertainty estimation skills. Learned to evaluate model assumptions, quantify variability and translate statistical findings into practical business decisions.</p></article></div></div></div>
+</div><div class="ap-project" data-ap-project="3" hidden="">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 04 / 06</span><h3>Applied Economics &amp; Economic Research</h3><p class="ap-tags">Microeconomics | Macroeconomics | Sports Economics | Economic Growth | Policy Analysis</p></div><a class="ap-link" href="https://tricia-de-rose.github.io/Economics/" rel="noopener noreferrer" target="_blank">View project ↗</a></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Applied Economics &amp; Economic Research" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-04.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 04</span><strong>Applied Economics &amp; Economic Research</strong><small>Place your screenshot at images/project-04.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="3-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="3-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="3-2" role="tab" type="button">Technical Methods</button><button aria-selected="false" class="ap-subtab" data-ap-sub="3-3" role="tab" type="button">Key Research Highlights</button><button aria-selected="false" class="ap-subtab" data-ap-sub="3-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="3-0" role="tabpanel"><h4>Project Overview</h4><p>Undertook applied economics research examining how market behaviour, economic policies and macroeconomic conditions influence businesses, households and long-term economic growth. Combined economic theory with quantitative analysis to investigate real-world economic challenges and their implications for decision-making.</p></article><article class="ap-subpanel" data-ap-detail="3-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Economic decisions are shaped by interconnected factors, including inflation, interest rates, employment, consumer behaviour and government policy. Understanding these relationships requires evaluating economic evidence, identifying underlying drivers and distinguishing short-term fluctuations from structural trends.</p></article><article class="ap-subpanel" data-ap-detail="3-2" hidden="" role="tabpanel"><h4>Technical Methods</h4><ul><li>Microeconomic Analysis: Supply, demand, elasticity, market structures and consumer behaviour.</li><li>Macroeconomic Analysis: GDP, inflation, unemployment and monetary and fiscal policy.</li><li>Economic Growth: Productivity, investment, technological progress and long-term development.</li><li>Sports Economics: Economic incentives, sporting markets, athlete compensation and the financial implications of major sporting events.</li><li>Quantitative Research: Economic indicators, statistical comparisons and trend analysis.</li><li>Policy Evaluation: Assessment of economic trade-offs and distributional consequences.</li></ul></article><article class="ap-subpanel" data-ap-detail="3-3" hidden="" role="tabpanel"><h4>Key Research Highlights</h4><p>Explored how economic conditions influence household purchasing power, business investment, market efficiency and national economic performance. Applied theoretical frameworks to interpret economic trends and evaluate alternative policy responses.</p></article><article class="ap-subpanel" data-ap-detail="3-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>Strengthened my economic reasoning, quantitative research and analytical communication skills. Developed a deeper understanding of how economic evidence informs financial decisions, business strategy and public policy.</p></article></div></div></div>
+</div><div class="ap-project" data-ap-project="4" hidden="">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 05 / 06</span><h3>Woolworths Retail Database &amp; SQL Analytics</h3><p class="ap-tags">Oracle SQL | Database Design | Normalisation | MongoDB | Retail Analytics</p></div></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Woolworths Retail Database &amp; SQL Analytics" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-05.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 05</span><strong>Woolworths Retail Database &amp; SQL Analytics</strong><small>Place your screenshot at images/project-05.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="4-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="4-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="4-2" role="tab" type="button">Technical Implementation</button><button aria-selected="false" class="ap-subtab" data-ap-sub="4-3" role="tab" type="button">Proposed Analytical Outputs</button><button aria-selected="false" class="ap-subtab" data-ap-sub="4-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="4-0" role="tabpanel"><h4>Project Overview</h4><p>Developed a proposed database solution for Woolworths Australia, focusing on retail sales, inventory management, supplier relationships and customer transactions. The case study applies relational database principles to a real-world supermarket environment, demonstrating how structured data supports operational reporting and business decision-making.</p></article><article class="ap-subpanel" data-ap-detail="4-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Large supermarket chains manage extensive product catalogues, frequent transactions and complex supplier relationships. Poorly structured data can create inconsistencies in inventory records, transaction reporting and procurement information. This project investigates how an integrated database can improve data accuracy, operational visibility and analytical efficiency.</p></article><article class="ap-subpanel" data-ap-detail="4-2" hidden="" role="tabpanel"><h4>Technical Implementation</h4><ul><li>Conceptual Modelling: ERDs, entities, relationships and cardinality.</li><li>Normalisation: UNF, 1NF, 2NF and 3NF.</li><li>Logical Modelling: Primary keys, foreign keys and integrity constraints.</li><li>Oracle SQL: DDL, DML, joins, subqueries, aggregations and advanced queries.</li><li>Transactions: COMMIT, ROLLBACK and SQL sequences.</li><li>MongoDB: Document modelling and NoSQL queries.</li></ul></article><article class="ap-subpanel" data-ap-detail="4-3" hidden="" role="tabpanel"><h4>Proposed Analytical Outputs</h4><ul><li>Sales performance across stores and product categories.</li><li>Inventory levels and stock replenishment requirements.</li><li>Supplier purchasing and delivery patterns.</li><li>Customer transaction and purchasing trends.</li></ul></article><article class="ap-subpanel" data-ap-detail="4-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>Strengthened my understanding of database architecture, relational modelling and SQL development. Explored how well-designed databases improve data integrity and enable reliable business intelligence in large-scale retail environments.</p></article></div></div></div>
+</div><div class="ap-project" data-ap-project="5" hidden="">
+<div class="ap-project-head"><div><span class="ap-kicker">PROJECT 06 / 06</span><h3>Melbourne Metro Network Simulator &amp; Route Optimisation</h3><p class="ap-tags">Python | Object-Oriented Programming | Graph Algorithms | Recursion | Unit Testing</p></div></div>
+<div class="ap-content"><div class="ap-visual"><img alt="Visual evidence for Melbourne Metro Network Simulator &amp; Route Optimisation" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="images/project-06.png"/><div class="ap-image-fallback" hidden=""><span>PROJECT 06</span><strong>Melbourne Metro Network Simulator &amp; Route Optimisation</strong><small>Place your screenshot at images/project-06.png</small></div></div>
+<div class="ap-details"><div aria-label="Project details" class="ap-subtabs" role="tablist"><button aria-selected="true" class="ap-subtab active" data-ap-sub="5-0" role="tab" type="button">Project Overview</button><button aria-selected="false" class="ap-subtab" data-ap-sub="5-1" role="tab" type="button">The Problem</button><button aria-selected="false" class="ap-subtab" data-ap-sub="5-2" role="tab" type="button">Technical Implementation</button><button aria-selected="false" class="ap-subtab" data-ap-sub="5-3" role="tab" type="button">Proposed Features</button><button aria-selected="false" class="ap-subtab" data-ap-sub="5-4" role="tab" type="button">What I Learned</button></div><div class="ap-detail-body"><article class="ap-subpanel" data-ap-detail="5-0" role="tabpanel"><h4>Project Overview</h4><p>An original Python application concept inspired by Melbourne's metropolitan rail network. The proposed system models railway stations, interconnected lines and passenger journeys to identify efficient routes, estimate travel times and simulate service disruptions using graph-based algorithms.</p></article><article class="ap-subpanel" data-ap-detail="5-1" hidden="" role="tabpanel"><h4>The Problem</h4><p>Urban rail networks contain interconnected routes, transfer stations and changing service conditions. Identifying efficient journeys requires evaluating alternative paths, transfer requirements and disruptions. The challenge is to develop a reliable route-planning system capable of processing network data and adapting recommendations when connections become unavailable.</p></article><article class="ap-subpanel" data-ap-detail="5-2" hidden="" role="tabpanel"><h4>Technical Implementation</h4><ul><li>Object-Oriented Programming: Classes for stations, routes, trains and journeys.</li><li>Data Structures: Dictionaries, lists, sets and graph representations.</li><li>Algorithms: Dijkstra's shortest-path algorithm and route comparison.</li><li>Recursion: Depth-first exploration of alternative routes.</li><li>File I/O: CSV-based station, connection and timetable data.</li><li>Exception Handling: Invalid stations, missing connections and disrupted routes.</li><li>Unit Testing: Route accuracy, transfer calculations and edge cases.</li></ul></article><article class="ap-subpanel" data-ap-detail="5-3" hidden="" role="tabpanel"><h4>Proposed Features</h4><ul><li>Fastest-route and fewest-transfer recommendations.</li><li>Estimated journey durations and transfer counts.</li><li>Alternative routes during simulated disruptions.</li><li>Interactive command-line journey planner.</li></ul></article><article class="ap-subpanel" data-ap-detail="5-4" hidden="" role="tabpanel"><h4>What I Learned</h4><p>The project would strengthen my ability to translate real-world transport problems into algorithms, design reusable Python components and validate complex program behaviour through systematic testing</p></article></div></div></div>
+</div></div><div hidden="" id="projectCards"></div></div></section>
+<section class="section" id="beyond"><div class="wrap"><div class="section-head"><div><div class="eyebrow">07 · BEYOND THE NUMBERS</div><h2>14 Years in the Pool. Lessons for Life.</h2></div><div class="section-guide"><img alt="Illustrated Tricia, portfolio guide" src="images/image_15.webp"/><div class="section-guide-copy"><strong>Hi! I'm Tricia 👋</strong><span>Discover what competitive swimming taught me about leadership and resilience.</span></div><button class="section-guide-play" data-guide-play="beyond" type="button">▶ Play</button></div></div>
+<div class="swim-story"><div class="swim-copy card"><div class="swim-intro"><p>Swimming has been one of the most defining parts of my life, shaping my character through <strong>14 years of competitive sport</strong>. I had the honour of <strong>representing Sri Lanka as a member of the National Swimming Team from 2021 to 2024</strong>.</p><p>Throughout my swimming career, I established <strong>4 national swimming records</strong> and earned <strong>multiple national championship titles</strong>. Representing my country strengthened my discipline, resilience, leadership and determination.</p><p>Balancing competitive swimming with academic responsibilities taught me to perform under pressure, overcome challenges and continuously improve. I carry that same <strong>competitive spirit, perseverance and commitment to excellence</strong> into my professional career.</p></div><div class="swim-stats"><div><strong>14</strong><span>Years competing</span></div><div><strong>2021–24</strong><span>Sri Lanka National Team</span></div><div><strong>4</strong><span>National records</span></div></div></div><div class="swim-photo-grid"><figure class="swim-figure swim-feature"><img alt="Tricia competing in a swimming race" loading="lazy" src="images/image_16.webp"/></figure><figure class="swim-figure"><img alt="Sri Lankan swimming team" loading="lazy" src="images/image_17.webp"/></figure><figure class="swim-figure"><img alt="Monash graduation moments" loading="lazy" src="images/image_18.webp"/></figure><figure class="swim-figure"><img alt="VS Information Systems colleagues" loading="lazy" src="images/image_19.webp"/></figure></div></div></div></section>
+</main>
+<footer class="section" id="connect"><div class="wrap"><div class="contact-directory"><a href="mailto:flotriciaderose@gmail.com"><strong>Email</strong><span>flotriciaderose@gmail.com</span></a><a href="tel:+61416034777"><strong>Phone</strong><span>+61 416 034 777</span></a><a href="https://www.linkedin.com/in/tricia-de-rose/" rel="noopener" target="_blank"><strong>LinkedIn</strong><span>tricia-de-rose</span></a><a href="https://www.instagram.com/tricia_de_rose_/" rel="noopener" target="_blank"><strong>Instagram</strong><span>@tricia_de_rose_</span></a><a href="https://www.facebook.com/triciaderose2004" rel="noopener" target="_blank"><strong>Facebook</strong><span>triciaderose2004</span></a><div><strong>Location</strong><span>Melbourne, Australia</span></div></div><p class="footer-note">Melbourne, Australia · Open to opportunities across Australia</p></div></footer>
+<button aria-controls="helpPanel" aria-expanded="false" class="help-launcher" id="helpLauncher"><img alt="" src="images/image_20.webp"/>? Need Help</button>
+<aside aria-label="Portfolio audio and navigation guide" aria-modal="false" class="help-panel" hidden="" id="helpPanel" role="dialog"><div class="help-head"><img alt="" src="images/image_21.webp"/><div style="flex:1"><strong>Meet Tricia · Your Guide</strong><div class="small">Short, optional guidance for every section</div></div><button aria-label="Close guide" class="btn" id="helpClose">✕</button></div><div class="help-body"><label for="helpSection"><strong>Choose a section</strong></label><select id="helpSection" style="width:100%;margin:8px 0"></select><h3 id="helpTitle"></h3><p id="helpText"></p><div class="controls"><button class="btn primary" id="speakBtn">▶ Play</button><button class="btn" id="pauseBtn">⏸ Pause</button><button class="btn" id="stopBtn">■ Stop</button><label class="small" for="voiceSpeed" style="align-self:center">Speed</label><select id="voiceSpeed"><option value=".85">0.85×</option><option selected="" value="1">1×</option><option value="1.15">1.15×</option><option value="1.3">1.3×</option><option value="1.5">1.5×</option></select></div><div class="controls"><button class="btn" id="prevHelp">← Previous</button><button class="btn" id="nextHelp">Next →</button><button class="btn primary" id="visitHelp">Go to section ↗</button></div><p aria-live="polite" class="help-status" id="voiceStatus">Ready. Audio is optional.</p></div></aside>
+<script>
+
+"use strict";
+
+const $=(q,scope=document)=>scope.querySelector(q), $$=(q,scope=document)=>[...scope.querySelectorAll(q)];
+
+const setHTML=(id,html)=>{const el=document.getElementById(id);if(el)el.innerHTML=html;};
+
+const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+const external=(url,label)=>`<a class="btn" href="${url}" target="_blank" rel="noopener noreferrer">${escapeHTML(label)} ↗</a>`;
+
+const drive=["https://drive.google.com/file/d/1VJZOyUhZxt6znbQ2hPPBBIRvwdb2I1Tg/view", "https://drive.google.com/file/d/1Y_e6dsYxPVDsCLKWF-_3NxMTjF09Glj0/view", "https://drive.google.com/file/d/1vlV9MYrMndsBxeNqY2jrMaJdbab4O_rM/view", "https://drive.google.com/file/d/1deZQc9Aq8BIANN71Crslr43CQkLTxcxi/view", "https://drive.google.com/file/d/1RHAJ7L0_zUIns284usPkhg2ZsUfPJ0d0/view"];
+
+const interests={
+ analytics:{title:"Analytics",icon:"📊",theme:"analytics-theme",areas:[
+ ["Programming","Python · R · SQL · Java"],
+ ["Web Development","HTML · CSS · JavaScript"],
+ ["Machine Learning & AI","KNN · Logistic Regression · Random Forest · Decision Trees · Neural Networks · SVM  ·  Explainable AI (XAI) · SHAP · LIME"],
+ ["Data Analytics","Statistical Analysis · Regression · Hypothesis Testing · Forecasting · Exploratory Data Analysis (EDA)"],
+ ["Data Visualisation & BI","Power BI · DAX · Tableau"],
+ ["Databases & Data Management","Oracle SQL · MongoDB"]]},
+ finance:{title:"Finance",icon:"💹",theme:"finance-theme",areas:[
+ ["Corporate Finance","Financial Analysis · Capital Budgeting · Valuation · Capital Structure"],
+ ["Investments","Portfolio Management · Asset Valuation · Risk & Return · Investment Analysis"],
+ ["Derivatives","Options · Futures · Forwards · Hedging Strategies · Risk Management"]]},
+ economics:{title:"Economics",icon:"🌍",theme:"economics-theme",areas:[
+ ["Microeconomics","Consumer Behaviour · Market Structures · Game Theory · Competition"],
+ ["Macroeconomics & Growth","Economic Growth · Productivity · Technology · Inequality"],
+ ["Sports Economics","Sports Markets · Competitive Balance · Athlete Incentives"],
+ ["Economic Analysis","Regression · Hypothesis Testing · Economic Modelling"]],link:"https://tricia-de-rose.github.io/Economics/"},
+ accounting:{title:"Accounting",icon:"📒",theme:"accounting-theme",areas:[["Financial Accounting","Accounting Principles · Australian Accounting Standards (AASB) · Revenue & Expense Recognition"],["Bookkeeping","Double-Entry Accounting · Journal Entries · General Ledgers · Trial Balances"],["Financial Reporting","Income Statements · Balance Sheets · Adjusting Entries · Accruals · Depreciation"],["Financial Statement Analysis","Profitability · Liquidity · Efficiency · Solvency Ratios"],["Accounting Systems & Software","MYOB · Simply Accounting · Financial Recordkeeping · Financial Reporting"]]},
+};
+function selectButtons(selector,attribute,value){$$(selector).forEach(b=>{const active=b.dataset[attribute]===value;b.setAttribute("aria-selected",String(active));b.classList.toggle("active",active)})}
+function showInterest(key){
+ const x=interests[key];if(!x)return;
+ $$("#interestTabs button").forEach(b=>{const active=b.dataset.interest===key;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
+ const panel=$("#interestDetail");panel.className="interest-details "+x.theme;
+ panel.innerHTML=`<div class="interest-heading"><h4>${x.title}</h4><span aria-hidden="true">${x.icon}</span></div><div class="interest-body">${x.areas.map(([label,values])=>`<p><b>${label}:</b> ${values}</p>`).join("")}${x.link?`<a href="${x.link}" target="_blank" rel="noopener noreferrer">Explore My Economics Portfolio ↗</a>`:""}</div>`;
+}
+$$("#interestTabs button").forEach(b=>b.addEventListener("click",()=>showInterest(b.dataset.interest)));
+showInterest("analytics");
+
+const experiences=[
+
+{tag:"01 · ANALYTICS",role:"Data Analyst Intern",company:"VS Information Systems",color:"#e1f6fc",work:"Developed Power BI financial reporting dashboards for Altria and Smile Media. Completed data cleaning, Power Query transformations, data modelling, DAX calculations and interactive dashboard design. Worked with financial stakeholders to understand reporting requirements and present performance insights. ",learn:"Strengthened my ability to translate business questions into meaningful KPIs, structure and validate data, build reusable measures and communicate findings through clear, accessible dashboards."},
+
+{tag:"02 · CONSULTING",role:"Student Consultant",company:"Sofitel Melbourne · Monash University Project",color:"#efe7f8",work:"Analysed procurement practices, supplier risks and ESG compliance, with a focus on modern slavery exposure across hotel operations. Evaluated supplier screening processes, governance structures and supply chain transparency to identify gaps in verification, accountability and risk management. Contributed to the development of a three-pillar Supplier Excellence framework, proposing practical strategies to strengthen ethical sourcing, supplier oversight and long-term sustainability, supported by a three-year implementation roadmap.",learn:"Gained practical experience applying analytical research, critical thinking and strategic problem-solving to real business challenges. Strengthened my ability to assess organisational risks, interpret complex information and translate findings into actionable recommendations. Developed a deeper understanding of stakeholder collaboration, corporate governance and the importance of balancing commercial performance with ethical and sustainability responsibilities."},
+
+{tag:"03 · FINANCE",role:"Accounts Assistant / Finance Analyst",company:"Herald Enterprises",color:"#fff0d8",work:"Managed financial records and supported day-to-day accounting operations using Simply Accounting software. Assisted in preparing profit and loss statements, balance sheets and financial reports, ensuring accurate recording and organisation of financial transactions. Analysed income, expenditure and financial trends to assess profitability, monitor business performance and support informed financial decision making.",learn:"Strengthened my practical understanding of financial accounting, bookkeeping and financial statement preparation within a business environment. Developed analytical skills in interpreting financial data, identifying trends and evaluating profitability. Gained valuable insight into how accurate financial reporting, effective expense management and financial analysis contribute to business stability, operational efficiency and strategic decision making."},
+
+{tag:"04 · OPERATIONS",role:"Trainee Administration Officer",company:"Tele Energy Pty Ltd",color:"#e4f5e8",work:"Supported daily business operations through customer service, order processing, inventory management and administrative coordination. Prepared and managed quotations, invoices and purchase orders while maintaining accurate customer and inventory records. Assisted with installation scheduling, coordinated customer enquiries and maintained business documentation to support efficient workflows, timely communication and smooth operational processes.",learn:"Gained practical experience in business administration, operational coordination and customer relationship management. Strengthened my organisational, communication and problem-solving skills while developing a deeper understanding of how different business functions work together. Learned the importance of accuracy, time management and effective workflow coordination in maintaining operational efficiency and delivering reliable customer service."}
+
+];
+
+setHTML("experienceCards",experiences.map((e,i)=>`<button class="exp-tile ${i===0?"active":""}" style="--tile:${e.color}" data-exp="${i}" aria-pressed="${i===0}"><span class="eyebrow">${e.tag}</span><b>${e.role}</b><small>${e.company}</small></button>`).join(""));
+
+function showExperience(i){$$("[data-exp]").forEach(b=>{b.classList.toggle("active",+b.dataset.exp===i);b.setAttribute("aria-pressed",String(+b.dataset.exp===i))});const e=experiences[i];setHTML("experienceDetail",`<div class="section-head"><div><div class="eyebrow">${e.tag}</div><h3>${e.role}</h3><p class="muted">${e.company}</p></div><button class="btn" id="closeExp">✕ Close</button></div><div class="detail-columns"><div><h4>Work</h4><p>${e.work}</p></div><div><h4>What I Learned</h4><p>${e.learn}</p></div></div>${i===0?`<a class="btn vsis-original" href="https://drive.google.com/file/d/1Y_e6dsYxPVDsCLKWF-_3NxMTjF09Glj0/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="margin-top:12px">↗ View Original Data Analytics Work</a>`:""}`);$("#closeExp").onclick=()=>{$("#experienceDetail").hidden=true;$$("[data-exp]").forEach(b=>b.classList.remove("active"))};$("#experienceDetail").hidden=false}
+
+$$("[data-exp]").forEach(b=>b.onclick=()=>showExperience(+b.dataset.exp));showExperience(0);
+
+const dashboards={
+
+altria:{name:"Altria · Financial Performance",subtitle:"March 2025 reporting snapshot",kpis:[["Monthly Revenue","LKR 80.33M"],["Target Achievement","83.83%"],["Top Project","LKR 14.27M"],["Projects","10"]],modules:["Sales","Gross Profit","Expenses","Net Profit","Debtors","Creditors","Projects"],url:drive[0]},
+
+smile:{name:"Smile Media · Financial Performance",subtitle:"Power BI reporting and analysis",kpis:[],modules:["Sales","Gross Profit","Expenses","Net Profit","Debtors","Creditors","Projects"],url:drive[1]}
+
+};
+
+let dashboard="altria",labTab="modules",module="Sales",calcType="growth",stage=0;
+
+const moduleDescriptions={
+
+Sales:"Examine revenue by period, compare results with targets and investigate changes in performance.",
+
+"Gross Profit":"Compare revenue with direct costs to understand gross profit and margins.",
+
+Expenses:"Review expenditure patterns and identify cost categories affecting financial performance.",
+
+"Net Profit":"Understand the relationship between revenue, costs and bottom-line results.",
+
+Debtors:"Monitor outstanding customer balances and support receivables oversight.",
+
+Creditors:"Review amounts owed to suppliers and support payment planning.",
+
+Projects:"Explore performance at project level to identify high-value activities and trends."
+
+};
+
+const stages=[
+
+["Requirements Gathering","Identified reporting objectives, business questions, key financial indicators and intended dashboard users."],
+
+["Data Preparation","Reviewed source records, checked data quality and prepared consistent financial information for analysis."],
+
+["Power Query","Cleaned and transformed data, corrected types and organised repeatable transformation steps."],
+
+["Data Modelling","Structured tables and relationships to support reliable cross-filtering and reporting."],
+
+["DAX Measures","Built calculations and KPI measures for financial analysis and comparison."],
+
+["Dashboard Design","Designed report layouts, interactive visuals, navigation and readable visual themes."]
+
+];
+
+function renderLab(){
+
+const d=dashboards[dashboard];$("#labTitle").textContent=d.name;$("#labSubtitle").textContent=d.subtitle;
+
+selectButtons("[data-dashboard]","dashboard",dashboard);selectButtons("[data-labtab]","labtab",labTab);
+
+setHTML("dashboardKpis",d.kpis.length?d.kpis.map(([label,value])=>`<div class="card metric"><span>${label}</span><strong>${value}</strong></div>`).join(""):`<div class="notice" style="grid-column:1/-1">Explore the Smile Media dashboard and its reporting modules. Verified summary KPIs have not been provided here, so no figures have been invented.</div>`);
+
+let body="";
+
+if(labTab==="modules"){body=`<div class="lab-content"><div><h3>Explore the 7 Reporting Modules</h3><p class="muted small">Select a module to see what it analyses.</p><div class="module-buttons">${d.modules.map(x=>`<button class="chip ${x===module?"active":""}" data-module="${x}">${x}</button>`).join("")}</div></div><div class="card"><h3>${module}</h3><p>${moduleDescriptions[module]}</p>${dashboard==="altria"&&module==="Sales"?'<p class="notice">March 2025 sales target achievement: 83.83%.</p>':""}</div></div>`}
+
+if(labTab==="calculator"){body=`<div class="lab-content"><div><h3>Interactive Financial KPI Calculator</h3><p class="muted small">Try example values. These are editable illustrations, not dashboard source figures.</p><div class="controls"><button class="chip ${calcType==="growth"?"active":""}" data-calc="growth">Revenue Growth</button><button class="chip ${calcType==="margin"?"active":""}" data-calc="margin">Gross Profit Margin</button></div><div class="calc-grid"><label><span id="calcLabelA">Current Revenue (LKR)</span><input type="number" id="calcA" value="337500"></label><label><span id="calcLabelB">Previous Revenue (LKR)</span><input type="number" id="calcB" value="84500"></label></div></div><div class="card"><h3 id="calcResultLabel">Revenue Growth</h3><div class="result" id="calcResult"></div><p id="calcFormula" class="muted small"></p><button class="btn" id="resetCalc">↺ Reset</button></div></div>`}
+
+if(labTab==="process"){body=`<h3>Behind the Dashboard</h3><p class="muted small">Select a development stage to discover what I did.</p><div class="stage-buttons">${stages.map(([name],i)=>`<button class="chip ${stage===i?"active":""}" data-stage="${i}">${i+1}. ${name}</button>`).join("")}</div><div class="card" style="margin-top:12px"><h3>${stages[stage][0]}</h3><p>${stages[stage][1]}</p></div>`}
+
+setHTML("labPanel",body);setHTML("dashboardLinks",external(d.url,"View Full Dashboard PDF")+external(drive[2],"Additional Portfolio File"));
+
+$$("[data-module]").forEach(b=>b.onclick=()=>{module=b.dataset.module;renderLab()});
+
+$$("[data-stage]").forEach(b=>b.onclick=()=>{stage=+b.dataset.stage;renderLab()});
+
+$$("[data-calc]").forEach(b=>b.onclick=()=>{calcType=b.dataset.calc;renderLab()});
+
+if(labTab==="calculator"){const update=()=>{const a=Number($("#calcA").value),b=Number($("#calcB").value);const val=calcType==="growth"?(b===0?null:(a-b)/b*100):(a===0?null:(a-b)/a*100);$("#calcResult").textContent=val===null?"N/A":val.toLocaleString("en-AU",{maximumFractionDigits:2,minimumFractionDigits:2})+"%";$("#calcResultLabel").textContent=calcType==="growth"?"Revenue Growth":"Gross Profit Margin";$("#calcFormula").textContent=calcType==="growth"?"(Current − Previous) ÷ Previous × 100":"(Revenue − Cost of Sales) ÷ Revenue × 100"};if(calcType==="margin"){$("#calcLabelA").textContent="Revenue (LKR)";$("#calcLabelB").textContent="Cost of Sales (LKR)"}$("#calcA").oninput=update;$("#calcB").oninput=update;$("#resetCalc").onclick=()=>renderLab();update()}
+
+}
+
+$$("[data-dashboard]").forEach(b=>b.onclick=()=>{dashboard=b.dataset.dashboard;renderLab()});$$("[data-labtab]").forEach(b=>b.onclick=()=>{labTab=b.dataset.labtab;renderLab()});if(document.getElementById("lab"))renderLab();
+
+const projects=[
+
+["Predictive Healthcare Analytics","analytics","#06a5bd","Compared machine learning classification approaches for predicting patient outcomes using the MIMIC-III critical care dataset.","Python · Logistic Regression · Decision Trees · Neural Networks","Explored preprocessing, classification, model comparison and evaluation in a healthcare prediction setting."],
+
+["Statistical Research & Hypothesis Testing","research","#d6a34e","Investigated attitudes towards proposed social media restrictions for people under 16 using survey data and statistical testing.","R · ANOVA · Chi-Square · Regression","Used statistical inference to evaluate relationships, group differences and research hypotheses."],
+
+["Relational Database Design & SQL","programming","#9872d7","Studied database design through Ocean Odyssey and Run Monash case studies, including relational schemas and query development.","Oracle SQL · ER Modelling · Normalisation · MongoDB","Explored entity relationships, database normalisation, SQL queries and structured data management."],
+
+["Object-Oriented Python Development","programming","#48a780","Developed a command-line item and container management system using Python.","Python · OOP · Inheritance · Recursion · File I/O","Implemented capacity checking, nested containers, specialised container types, CSV loading and interactive item management."],
+
+["Australian Bushfire Data Dashboard","analytics","#df8198","Created an interactive visualisation exploring Australian bushfire patterns, environmental conditions and geographic variation.","Data Visualisation · Dashboard Design · EDA","Translated complex environmental data into accessible, interactive visual explanations."],
+
+["Applied Economics & Economic Research","research","#7693df","Applied economic reasoning and quantitative analysis to explore markets, trends and economic relationships.","Microeconomics · Macroeconomics · Economic Analysis","Combined economic theory with evidence-based research and analytical communication."]
+
+];
+
+setHTML("projectCards",projects.map((p,i)=>`<article class="card project-card" data-category="${p[1]}" style="--project-color:${p[2]}"><div class="eyebrow">PROJECT ${String(i+1).padStart(2,"0")}</div><h3>${p[0]}</h3><p>${p[3]}</p><div>${p[4].split(" · ").map(t=>`<span class="pill">${t}</span>`).join("")}</div><button class="btn primary" data-project="${i}" aria-expanded="false">Explore Project +</button><div class="project-extra" hidden><p>${p[5]}</p>${i===4?external("https://tricia-de-rose.github.io/3179/","View Bushfire Dashboard"):i===5?external("https://tricia-de-rose.github.io/Economics/","View Economics Portfolio"):""}</div></article>`).join(""));
+
+$$("[data-filter]").forEach(b=>b.onclick=()=>{$$("[data-filter]").forEach(x=>x.classList.toggle("active",x===b));$$(".project-card").forEach(c=>c.hidden=b.dataset.filter!=="all"&&c.dataset.category!==b.dataset.filter)});
+
+$$("[data-project]").forEach(b=>b.onclick=()=>{const panel=$(".project-extra",b.closest(".project-card"));panel.hidden=!panel.hidden;b.setAttribute("aria-expanded",String(!panel.hidden));b.textContent=panel.hidden?"Explore Project +":"Close Details −"});
+
+const consulting={
+
+challenge:["Understanding Supplier Risk","The engagement examined supplier governance, procurement practices and potential modern slavery exposure, identifying opportunities to strengthen responsible sourcing and risk oversight."],
+
+findings:["Key Findings","The review highlighted inconsistent supplier screening, reliance on self-declarations, limited visibility beyond Tier 1 and fragmented accountability. Priority areas included agency labour, contracted services, food and beverage, and rooms and linen."],
+
+recommendations:["Supplier Excellence Framework","Three connected pillars: Visibility & Transparency, Governance & Accountability, and Verification & Continuous Improvement. A proposed three-year roadmap progresses from establishing foundations to expanding controls and strengthening assurance."],
+
+contribution:["My Contribution","Contributed to supplier-risk and ESG research, interpretation of procurement findings, identification of governance gaps and development of practical recommendations and implementation planning as part of the Monash consulting team."]
+
+};
+
+function showConsult(k){selectButtons("[data-consult]","consult",k);setHTML("consultPanel",`<h3>${consulting[k][0]}</h3><p>${consulting[k][1]}</p>${k==="recommendations"?'<div class="notice">Year 1: Establish → Year 2: Expand → Year 3: Assure</div>':""}`)}
+
+$$("[data-consult]").forEach(b=>b.onclick=()=>showConsult(b.dataset.consult));if(document.getElementById("consulting"))showConsult("challenge");
+
+const beyond={
+
+reflection:"Competitive swimming has shaped far more than my sporting achievements. It has taught me discipline, resilience, time management and the importance of consistent improvement. Representing Sri Lanka and taking on leadership responsibilities strengthened my ability to perform under pressure, work with others and remain committed to long-term goals. These are qualities I carry into my academic and professional life.",
+
+achievements:"National 200m Butterfly Champion (2022), Under-20 Schools Champion (2023), Pentathlon Champion (2023), four national records and Sri Lanka National Team representation (2021–2024).",
+
+leadership:"School captaincy, team leadership, mentoring younger swimmers, coaching and supporting fellow athletes helped develop my communication, teamwork and accountability."
+
+};
+
+function showBeyond(k){selectButtons("[data-beyond]","beyond",k);setHTML("beyondPanel",`<p>${beyond[k]}</p>`)}$$("[data-beyond]").forEach(b=>b.onclick=()=>showBeyond(b.dataset.beyond));showBeyond("reflection");
+
+
+/* Reliable standalone audio guide controller.
+   Uses browser speech synthesis, triggered by an explicit user click. */
+(function(){
+"use strict";
+const guide = [
+ {id:"home",title:"Home",text:"Welcome to my portfolio. Explore My Portfolio opens About Me, and View My Resume opens my resume. Use the navigation bar to move between the eight sections."},
+ {id:"story",title:"About Me",text:"Learn about my Commerce background and interests. Select the coloured Business Analytics, Finance, Accounting or Economics tabs to change the details, and open my economics portfolio using the link in the Economics tab."},
+ {id:"bring",title:"What I Bring",text:"Explore my knowledge of accounting and reporting, corporate finance, business analytics and financial intelligence. Select any topic to display its skills and practical applications."},
+ {id:"experience",title:"Professional Experience",text:"Choose a professional experience card to read about my work and what I learned. The VS Information Systems entry also links to my original data analytics work."},
+ {id:"financial-projects",title:"Accounting and Financial Projects",text:"There are four white project cards: Altria, Smile Media, Corporate Finance and Bluewater. Each card has Explore Case Study to open an interactive HTML project. For Altria, Smile Media and Corporate Finance, the View My Original Project Document link is right beside Explore Case Study, inside the same white card. Select either link to open it in a new tab."},
+ {id:"projects",title:"Academic Projects",text:"Explore the academic project tabs and filters. Use the supporting links for machine learning, bushfire analytics and other academic work."},
+ {id:"beyond",title:"Beyond the Numbers",text:"Read about my fourteen years of competitive swimming, my experience representing Sri Lanka from 2021 to 2024, and the lessons I carry into my professional career."},
+ {id:"connect",title:"Contact",text:"You can contact me through email, telephone, LinkedIn, Instagram or Facebook. I am based in Melbourne, Australia."}
+];
+const byId=id=>document.getElementById(id);
+const panel=byId("helpPanel"),launcher=byId("helpLauncher"),status=byId("voiceStatus");
+const selector=byId("helpSection"),speed=byId("voiceSpeed");
+const supported=!!(window.speechSynthesis&&window.SpeechSynthesisUtterance);
+let index=0,utterance=null,voices=[],speaking=false,token=0;
+const femalePattern=/samantha|zira|aria|jenny|susan|victoria|karen|moira|serena|tessa|ava|allison|olivia|female|natasha|sonia|hazel|libby|heera/i;
+function setStatus(message){if(status)status.textContent=message}
+function loadVoices(){
+ if(!supported)return [];
+ voices=window.speechSynthesis.getVoices()||[];
+ return voices;
+}
+function chooseVoice(){
+ const all=loadVoices();
+ const english=all.filter(v=>/^en(?:-|_|$)/i.test(v.lang));
+ return english.find(v=>femalePattern.test(v.name))||
+        english.find(v=>/google uk english female|microsoft aria/i.test(v.name))||
+        english.find(v=>/en-AU/i.test(v.lang))||
+        english[0]||all[0]||null;
+}
+function stop(){
+ token++;
+ if(supported)try{window.speechSynthesis.cancel()}catch(e){}
+ utterance=null;speaking=false;
+ setStatus("Stopped.");
+ const pause=byId("pauseBtn");if(pause)pause.textContent="⏸ Pause";
+}
+function showGuide(i,open=true){
+ index=(i+guide.length)%guide.length;
+ const g=guide[index];
+ if(selector)selector.value=g.id;
+ if(byId("helpTitle"))byId("helpTitle").textContent=g.title;
+ if(byId("helpText"))byId("helpText").textContent=g.text;
+ if(open&&panel){panel.hidden=false;if(launcher)launcher.setAttribute("aria-expanded","true")}
+}
+function play(){
+ if(!supported){setStatus("Your browser does not support speech synthesis. Try Microsoft Edge or Chrome.");return}
+ const g=guide[index];if(!g)return;
+ stop();
+ const ownToken=token;
+ const u=new SpeechSynthesisUtterance(g.text);
+ const voice=chooseVoice();
+ if(voice){u.voice=voice;u.lang=voice.lang}else{u.lang="en-AU"}
+ u.rate=Math.max(.65,Math.min(1.7,Number(speed?.value)||1));
+ u.pitch=1.08;u.volume=1;
+ u.onstart=()=>{if(ownToken!==token)return;speaking=true;setStatus("Playing"+(voice?" · "+voice.name:" · default English voice"))};
+ u.onend=()=>{if(ownToken!==token)return;speaking=false;utterance=null;setStatus("Finished.")};
+ u.onerror=e=>{if(ownToken!==token)return;speaking=false;utterance=null;
+  if(e.error!=="interrupted"&&e.error!=="canceled")setStatus("Audio could not start ("+e.error+"). Try Edge or Chrome and select Play again.");
+ };
+ utterance=u;
+ try{
+  window.speechSynthesis.speak(u);
+  setStatus("Starting audio…");
+ }catch(e){setStatus("Unable to play audio: "+e.message)}
+}
+function playSection(id){
+ const i=guide.findIndex(g=>g.id===id);
+ if(i<0)return;
+ showGuide(i);
+ play();
+}
+if(selector)selector.innerHTML=guide.map(g=>'<option value="'+g.id+'">'+g.title+'</option>').join("");
+if(launcher)launcher.addEventListener("click",()=>{
+ if(panel?.hidden){showGuide(index);setStatus("Choose Play to hear this section.")}
+ else{panel.hidden=true;launcher.setAttribute("aria-expanded","false");stop()}
+});
+byId("helpClose")?.addEventListener("click",()=>{if(panel)panel.hidden=true;if(launcher)launcher.setAttribute("aria-expanded","false");stop()});
+byId("heroGuideBtn")?.addEventListener("click",()=>playSection("home"));
+byId("storyGuidePlay")?.addEventListener("click",()=>playSection("story"));
+byId("experienceGuidePlay")?.addEventListener("click",()=>playSection("experience"));
+document.querySelectorAll("[data-guide-play]").forEach(btn=>btn.addEventListener("click",()=>playSection(btn.dataset.guidePlay)));
+document.querySelectorAll("[data-help]").forEach(btn=>btn.addEventListener("click",()=>{
+ const i=guide.findIndex(g=>g.id===btn.dataset.help);if(i>=0){stop();showGuide(i)}
+}));
+selector?.addEventListener("change",()=>{stop();showGuide(guide.findIndex(g=>g.id===selector.value))});
+byId("speakBtn")?.addEventListener("click",play);
+byId("stopBtn")?.addEventListener("click",stop);
+byId("pauseBtn")?.addEventListener("click",()=>{
+ if(!supported)return;
+ const engine=window.speechSynthesis;
+ if(engine.paused){engine.resume();byId("pauseBtn").textContent="⏸ Pause";setStatus("Resumed.")}
+ else if(engine.speaking){engine.pause();byId("pauseBtn").textContent="▶ Resume";setStatus("Paused.")}
+});
+byId("prevHelp")?.addEventListener("click",()=>{stop();showGuide(index-1)});
+byId("nextHelp")?.addEventListener("click",()=>{stop();showGuide(index+1)});
+byId("visitHelp")?.addEventListener("click",()=>{
+ byId(guide[index].id)?.scrollIntoView({behavior:"smooth"});
+ if(panel)panel.hidden=true;
+ if(launcher)launcher.setAttribute("aria-expanded","false");
+ stop();
+});
+speed?.addEventListener("change",()=>{if(speaking)play();else setStatus("Speed set to "+speed.value+"×. Press Play.")});
+byId("mobileMenu")?.addEventListener("click",()=>{
+ const open=byId("navLinks")?.classList.toggle("open");
+ byId("mobileMenu").setAttribute("aria-expanded",String(!!open));
+});
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{
+ byId("navLinks")?.classList.remove("open");
+ byId("mobileMenu")?.setAttribute("aria-expanded","false");
+}));
+if(supported){
+ loadVoices();
+ window.speechSynthesis.addEventListener?.("voiceschanged",loadVoices);
+ setStatus("Ready. Press Play to hear your guide.");
+}else setStatus("Speech is not supported in this browser.");
+showGuide(0,false);
+})();
+</script><script>
+/* Academic projects tabs — does not alter other portfolio sections */
+(()=>{const root=document.getElementById('projects');if(!root)return;
+root.querySelectorAll('[data-ap-select]').forEach(btn=>btn.addEventListener('click',()=>{
+ const id=btn.dataset.apSelect;
+ root.querySelectorAll('[data-ap-select]').forEach(b=>{const on=b===btn;b.classList.toggle('active',on);b.setAttribute('aria-selected',String(on));});
+ root.querySelectorAll('[data-ap-project]').forEach(p=>p.hidden=p.dataset.apProject!==id);
+}));
+root.querySelectorAll('[data-ap-sub]').forEach(btn=>btn.addEventListener('click',()=>{
+ const project=btn.closest('[data-ap-project]'),id=btn.dataset.apSub;
+ project.querySelectorAll('[data-ap-sub]').forEach(b=>{const on=b===btn;b.classList.toggle('active',on);b.setAttribute('aria-selected',String(on));});
+ project.querySelectorAll('[data-ap-detail]').forEach(panel=>panel.hidden=panel.dataset.apDetail!==id);
+}));
+})();
+</script>
+<script>
+const bringTopics=[
+{title:"Financial Accounting & Reporting",summary:"Accounting knowledge supported by financial recordkeeping and reporting experience.",points:["Australian Accounting Standards (AASB), double-entry bookkeeping, journal entries, general ledgers and trial balances.","Income statements, balance sheets, adjusting entries, accruals, depreciation and reconciliations.","Professional experience using Simply Accounting for financial records and reporting; academic experience using MYOB.","Accounts payable and receivable, financial ratios and financial statement interpretation."]},
+{title:"Corporate Finance & Financial Risk Management",summary:"Applying finance principles to investment appraisal and financial decision-making.",points:["Net present value (NPV), internal rate of return (IRR), capital budgeting and cash flow analysis.","Investment valuation, discounted cash flow, capital structure and cost of capital.","Financial markets, derivatives, forwards, futures, options and hedging strategies.","Understanding risk and return to assess financial decisions and business exposure."]},
+{title:"Business Analytics, Machine Learning & Programming",summary:"Combining programming, statistical methods and business interpretation.",points:["Python, R and SQL for data preparation, analysis and modelling.","Regression, classification, clustering, predictive modelling and statistical testing.","Machine learning approaches including decision trees, KNN and neural networks.","Power BI, Tableau and data visualisation to communicate findings and support decisions."]},
+{title:"Financial Analysis, Business Intelligence & Operations",summary:"Connecting operational records with financial insights and reporting.",points:["Practical experience with invoices, purchase orders, profitability analysis and financial recordkeeping.","Excel, Power Query, Power BI and DAX for financial reporting and KPI analysis.","Developed reporting solutions covering revenue, expenses, debtors, creditors and project profitability.","Data cleaning, transformation, modelling and interactive dashboard design for business stakeholders."]}
+];
+function renderBring(i){const t=bringTopics[i];if(!t)return;document.querySelectorAll('[data-bring]').forEach((b,j)=>{b.classList.toggle('active',i===j);b.setAttribute('aria-selected',String(i===j))});document.getElementById('bringDetail').innerHTML='<div class="eyebrow">EXPERTISE '+String(i+1).padStart(2,'0')+' / 04</div><h3>'+t.title+'</h3><p class="lead">'+t.summary+'</p><ul>'+t.points.map(x=>'<li>'+x+'</li>').join('')+'</ul>';}
+document.querySelectorAll('[data-bring]').forEach(b=>b.addEventListener('click',()=>renderBring(Number(b.dataset.bring))));renderBring(0);
+</script><script>
+/* Active navigation tracks the visible section without moving the audio or help widgets. */
+(()=>{const nav=[...document.querySelectorAll('#navLinks a[href^="#"]')];const targets=nav.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);if(!('IntersectionObserver' in window))return;const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio);if(!visible.length)return;const id=visible[0].target.id;nav.forEach(a=>{const on=a.getAttribute('href')==='#'+id;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})},{rootMargin:'-90px 0px -42% 0px',threshold:[0,.1,.25,.5]});targets.forEach(t=>observer.observe(t));})();
+</script></body></html>
